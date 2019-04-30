@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
+import {Link} from "react-router-dom";
 
 class LogoHN extends Component {
 	render() {
 		return (
-			<a
-				className="logo"
-				href="/?"
-			>
+			<Link className="logo" to="/">
 				<img
 					src="https://hn.algolia.com/assets/logo-hn-search.png"
 					alt="Hacker News"
-					className="logo-img"
 				/>
 				<div className="logo-name">
 					Search<br/>Hacker News
 				</div>
-			</a>
+			</Link>
 		);
 	}
 }

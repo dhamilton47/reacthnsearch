@@ -13,12 +13,9 @@ class LogoAlgolia extends Component {
 				<img
 					src={Algolia}
 					alt={"Algolia Logo White Full"}
+					width="60"
+					height="15"
 				/>
-				<div className="logo-name">
-					Search
-					<br/>
-					Hacker News
-				</div>
 			</a>
 			</span>
 

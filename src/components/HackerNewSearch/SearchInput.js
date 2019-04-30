@@ -1,10 +1,30 @@
 import React, { Component } from 'react';
 
 class SearchInput extends Component {
+
+
 	render() {
+
+		{/*
+		ng-model="$parent.query"
+		ng-model-options="{debounce: 100}"
+		ng-blur="blurred()"
+		ng-keyup="keyup($event)"
+		*/}
 		return (
-			<input placeholder="Search stories by title,url or author"/>
-		);
+			<div className="item-input-wrapper">
+				<i className="icon-search"/>
+				<input
+					type="search"
+					placeholder="Search stories by title, url or author"
+					autoComplete="off"
+					autoCapitalize="off"
+					spellCheck="false"
+					autoCorrect="off"
+					autoFocus=""
+				/>
+			</div>
+		)
 	}
 }
 
