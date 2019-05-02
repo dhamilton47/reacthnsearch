@@ -16,19 +16,11 @@ function App() {
 	return (
 		<Router>
 			<div>
-				{/* <Footer/> */}
-
 				<Route path="/" exact component={Home}/>
 				<Route path="/about/" component={About}/>
 				<Route path="/settings/" component={Settings}/>
 				<Route path="/help/" component={Help}/>
 				<Route path="/api/" component={Api}/>
-
-				<Route path="https://news.ycombinator.com" component={null}/>
-				{/*
-				<Route path="/settings/" component={Settings}/>
-				<Route path="/settings/" component={Settings}/>
-				*/}
 				<Route path="/cool-apps/" component={CoolApps}/>
 			</div>
 		</Router>

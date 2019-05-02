@@ -7,7 +7,7 @@ class Api extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={false}/>
-				<MainSection pageTitle={"API the world"}/>
+				<MainSection page={"api"}/>
 			</div>
 		)
 	}

@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {hit, settings, state} from './DataForSettings';
+//import {hit, settings, state} from './DataForSettings';
 import * as PropTypes from "prop-types";
 
 export class ItemTitle extends Component {
@@ -14,13 +14,24 @@ export class ItemTitle extends Component {
 	 */
 	render() {
 		return (
-			<a
-				href={hit._highlightResult.url.value}
-			>
-				<h2>{hit._highlightResult.title.value}</h2>
-			</a>
+			<React.Fragment>
+				<h2>
+				<a
+					href={this.props.story._highlightResult.url.value}
+				>
+					{this.props.story._highlightResult.title.value}
+				</a>
+				</h2>
+
+				{/* <!-- boIf: hit._tags[0] === 'comment' --> */}
+				{
+					this.props.story._tags[0] === 'comment'
+						? null
+						: null
+				}
+			</React.Fragment>
 		);
 	}
 }
 
-ItemTitle.propTypes = {story: PropTypes.any};
+ItemTitle.propTypes = {story: PropTypes.object};

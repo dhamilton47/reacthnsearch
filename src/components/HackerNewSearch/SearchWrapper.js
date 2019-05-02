@@ -6,13 +6,13 @@ import SettingsToggle from "./SettingsToggle";
 
 export const SearchWrapper = () => {
 	return (
-		<fragment>
+		<React.Fragment>
 			<div className="search-wrapper">
 				<SearchInput/>
 				<LogoAlgolia/>
 			</div>
 
 			<SettingsToggle/>
-		</fragment>
+		</React.Fragment>
 	);
 };

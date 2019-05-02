@@ -11,7 +11,8 @@ export const settings = {
 	showThumbnails: false,
 	style: "default",
 	dateRange: "all",
-	page: 4
+	page: 1,
+	login: false
 };
 
 export const state = "";
@@ -49,7 +50,7 @@ export const results = {
 							},
 						author:
 							{
-								value: "<em>Cogito</em>",
+								value: "Cogito",
 								matchLevel: "full",
 								matchedWords:
 									[
@@ -87,7 +88,7 @@ export const results = {
 							},
 						author:
 							{
-								value: "<em>epaga</em>",
+								value: "epaga",
 								matchLevel: "full",
 								matchedWords:
 									[
@@ -125,7 +126,7 @@ export const results = {
 							},
 						author:
 							{
-								value: "<em>patricktomas</em>",
+								value: "patricktomas",
 								matchLevel: "full",
 								matchedWords:
 									[
@@ -163,7 +164,7 @@ export const results = {
 							},
 						author:
 							{
-								value: "<em>grey-area</em>",
+								value: "grey-area",
 								matchLevel: "full",
 								matchedWords:
 									[
@@ -201,7 +202,7 @@ export const results = {
 							},
 						author:
 							{
-								value: "<em>panny</em>",
+								value: "panny",
 								matchLevel: "full",
 								matchedWords:
 									[
@@ -239,7 +240,7 @@ export const results = {
 							},
 						author:
 							{
-								value: "<em>olalonde</em>",
+								value: "olalonde",
 								matchLevel: "full",
 								matchedWords:
 									[
@@ -277,7 +278,7 @@ export const results = {
 							},
 						author:
 							{
-								value: "<em>tptacek</em>",
+								value: "tptacek",
 								matchLevel: "full",
 								matchedWords:
 									[

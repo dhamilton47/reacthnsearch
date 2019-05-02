@@ -121,7 +121,10 @@
 		</header>
 		<section class="main">
 		<!-- ngInclude: "_sidebar.html" -->
-			<div ng-include="&quot;_sidebar.html&quot;" class="ng-scope">
+			<div
+				ng-include="&quot;_sidebar.html&quot;"
+				class="ng-scope"
+			>
 				<aside class="sidebar ng-scope">
 					<ul>
 						<li>
@@ -258,7 +261,8 @@
 					</li>
 				</ul>
 		<!-- ngIf: settings.dateRange === "custom" && (!settings.dateStart || !settings.dateEnd) --></header>
-		<!-- uiView: main-content --><section class="main-content ng-scope" ui-view="main-content"><!-- ngIf: isSlowConnection -->
+		<!-- uiView: main-content -->
+			<section class="main-content ng-scope" ui-view="main-content"><!-- ngIf: isSlowConnection -->
 				<section class="search-results ng-scope" defer-share-dropdown="" sticky-list="">
 			<!-- ngRepeat: hit in results.hits -->
 					<div bindonce="" class="item ng-scope item_16582136" ng-class="&quot;item_&quot; + hit.objectID + (story[hit.objectID] ? &quot; item-show-comments&quot; : &quot;&quot;)" ng-click="clickHit(hit.objectID, $index + 1)" ng-repeat="hit in results.hits">

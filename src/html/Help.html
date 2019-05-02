@@ -116,7 +116,9 @@
 	</aside>
 		<div class="sliding-menu-fade-screen ng-scope" ng-click="toggleNav()"></div></div>
 		<!-- uiView: main-header --><header ui-view="main-header" class="ng-scope"><h1 class="ng-scope">Help</h1></header>
-		<!-- uiView: main-content --><section class="main-content ng-scope" ui-view="main-content"><section class="page ng-scope">
+		<!-- uiView: main-content -->
+		<section class="main-content ng-scope" ui-view="main-content">
+		<section class="page ng-scope">
 		<h3>Advanced search syntax</h3>
 		<ul>
 			<li>Use <code>"</code> to match a particular sequence of terms <code>"search engine"</code>,</li>
@@ -127,7 +129,8 @@
 			<li>Use <code>comments&gt;NUMBER</code> or <code>comments&lt;NUMBER</code> to filter by number of comments,</li>
 			<li>Use <code>date&gt;TIMESTAMP</code> or <code>date&lt;TIMESTAMP</code> to filter by date.</li>
 		</ul>
-	</section></section>
+	</section>
+	</section>
 		<footer>
 			<ul class="list-inline">
 				<li>

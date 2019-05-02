@@ -7,7 +7,7 @@ class Settings extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={false}/>
-				<MainSection pageTitle={"Setting the world straight"}/>
+				<MainSection page={"settings"}/>
 			</div>
 		)
 	}

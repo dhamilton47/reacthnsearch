@@ -7,7 +7,7 @@ class Home extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={true}/>
-				<MainSection pageTitle={"Home Page"}/>
+				<MainSection page={"home"}/>
 			</div>
 		)
 	}

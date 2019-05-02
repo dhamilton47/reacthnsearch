@@ -7,7 +7,7 @@ class Help extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={false}/>
-				<MainSection pageTitle={"Help the world"}/>
+				<MainSection page={"help"}/>
 			</div>
 		)
 	}

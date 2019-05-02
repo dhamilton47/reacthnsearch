@@ -7,7 +7,7 @@ class CoolApps extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={false}/>
-				<MainSection pageTitle={"CoolApps about the world"}/>
+				<MainSection page={"coolapps"}/>
 			</div>
 		)
 	}
