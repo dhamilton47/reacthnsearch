@@ -8,7 +8,7 @@ import { SectionApi } from "./SectionApi";
 import { SectionCoolApps } from "./SectionCoolApps";
 
 
-export const MainContent = (props) => {
+export const MainContent = props => {
 	const query = true;
 	//TODO: Need to determine and fix 'query'
 	return (
@@ -28,5 +28,3 @@ export const MainContent = (props) => {
 		</section>
 	)
 };
-
-export default MainContent;
