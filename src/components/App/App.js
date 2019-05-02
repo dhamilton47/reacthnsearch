@@ -7,10 +7,16 @@ import Settings from '../../pages/Settings';
 import Help from '../../pages/Help';
 import Api from '../../pages/Api';
 import CoolApps from '../../pages/CoolApps';
+import Hot from '../../pages/Hot';
+import ShowHN from '../../pages/ShowHN';
+import AskHN from '../../pages/AskHN';
+import Polls from '../../pages/Polls';
+import Jobs from '../../pages/Jobs';
+import Starred from '../../pages/Starred';
 
 import '../App/App.css';
-import '../HackerNewSearch/default.css';
-import '../HackerNewSearch/experimental.css';
+import '../HackerNewsSearch/default.css';
+import '../HackerNewsSearch/experimental.css';
 
 function App() {
 	return (
@@ -22,6 +28,12 @@ function App() {
 				<Route path="/help/" component={Help}/>
 				<Route path="/api/" component={Api}/>
 				<Route path="/cool-apps/" component={CoolApps}/>
+				<Route path="/hot" component={Hot}/>
+				<Route path="/show-hn" component={ShowHN}/>
+				<Route path="/ask-hn" component={AskHN}/>
+				<Route path="/polls" component={Polls}/>
+				<Route path="/jobs" component={Jobs}/>
+				<Route path="/starred" component={Starred}/>
 			</div>
 		</Router>
 	);

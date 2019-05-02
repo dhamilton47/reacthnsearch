@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { PageHeader } from '../components/HackerNewSearch/PageHeader';
-import MainSection from "../components/HackerNewSearch/MainSection";
+import { PageHeader } from '../components/HackerNewsSearch/PageHeader';
+import MainSection from "../components/HackerNewsSearch/MainSection";
 
 class CoolApps extends Component {
 	render() {

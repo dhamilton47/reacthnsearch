@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { PageHeader } from '../components/HackerNewsSearch/PageHeader';
-import MainSection from "../components/HackerNewsSearch/MainSection";
+import MainSection from '../components/HackerNewsSearch/MainSection';
 
-class Api extends Component {
+class Hot extends Component {
 	render() {
 		return (
 			<div className="container">
-				<PageHeader hasSearch={false}/>
-				<MainSection page={"api"}/>
+				<PageHeader hasSearch={true}/>
+				<MainSection page={"hot"}/>
 			</div>
 		)
 	}
 }
 
-export default Api;
+export default Hot;

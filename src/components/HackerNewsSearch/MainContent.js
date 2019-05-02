@@ -1,5 +1,5 @@
 import React from 'react';
-import PaginationContainer from "./PaginationContainer";
+
 import { SectionHome } from "./SectionHome";
 import { SectionAbout } from "./SectionAbout";
 import { SectionSettings } from "./SectionSettings";

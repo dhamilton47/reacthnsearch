@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
-import {PageHeader} from '../components/HackerNewSearch/PageHeader';
-import MainSection from "../components/HackerNewSearch/MainSection";
-import {Aside} from "../components/HackerNewSearch/Aside";
-import {Footer} from "../components/HackerNewSearch/Footer";
-import {SectionAbout} from "../components/HackerNewSearch/SectionAbout";
+import {PageHeader} from '../components/HackerNewsSearch/PageHeader';
+import MainSection from "../components/HackerNewsSearch/MainSection";
 
 {/*
 class About extends Component {
@@ -26,21 +23,6 @@ class About extends Component {
 			<div className="container">
 				<PageHeader hasSearch={false}/>
 				<MainSection page={"about"}/>
-
-				{/*
-				<section className="main">
-					<Aside/>
-
-					<header>
-						<h1>About</h1>
-					</header>
-
-
-					<SectionAbout/>
-
-					<Footer/>
-				</section>
-				*/}
 			</div>
 		)
 	}

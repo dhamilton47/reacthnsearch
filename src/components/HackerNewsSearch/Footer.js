@@ -1,16 +1,18 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import {ListSeparator} from "./ListSeparator";
-import {ExternalLink} from "./ExternalLink";
+import { Link} from "react-router-dom";
+import { ListSeparator } from "./ListSeparator";
+import { ExternalLink } from "./ExternalLink";
 
 export const Footer = () => {
 	return (
 		<footer>
 			<ul className="list-inline">
+				{/*
 				<li>
 					<Link to="/">Home</Link>
 				</li>
 				<ListSeparator/>
+				*/}
 				<li>
 					<Link to="/about/">About</Link>
 				</li>
