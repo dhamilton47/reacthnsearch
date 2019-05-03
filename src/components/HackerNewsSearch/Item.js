@@ -1,18 +1,19 @@
-import React, {Component} from 'react';
-import {ItemAuthor} from "./ItemAuthor";
-import {ItemCommentCount} from "./ItemCommentCount";
-import {ItemLikesCount} from "./ItemLikesCount";
-import {ItemSourceLink} from "./ItemSourceLink";
-import {ItemPosted} from "./ItemPosted";
-import {ItemTitle} from "./ItemTitle";
-import {ItemStarred} from "./ItemStarred";
-import {ShowStoryText} from "./ShowStoryText";
-import {ShowCommentText} from "./ShowCommentText";
+import React, { Component } from 'react';
+import { ItemAuthor } from "./ItemAuthor";
+import { ItemCommentCount } from "./ItemCommentCount";
+import { ItemLikesCount } from "./ItemLikesCount";
+import { ItemSourceLink } from "./ItemSourceLink";
+import { ItemPosted } from "./ItemPosted";
+import { ItemTitle } from "./ItemTitle";
+import { ItemStarred } from "./ItemStarred";
+import { ShowStoryText } from "./ShowStoryText";
+import { ShowCommentText } from "./ShowCommentText";
 import { makePlural } from "./Utils";
 
 import {settings, state} from './DataForSettings';
-
+//TODO: pass these in as props
 class Item extends Component {
+	//TODO: Investigate the need for these methods
 	cleanup() {}
 	clickHit() {}
 	gotoHit() {}
@@ -20,6 +21,7 @@ class Item extends Component {
 	loadComments() {}
 	toggleStar() {}
 	render() {
+		//TODO: work this out
 		{/*
 			<div className={ "item item_"+ this.props.story.objectID + (story[this.props.story.objectID] ? " item-show-comment" : "") }
 			     ng-click="clickHit(this.props.story.objectID, $index + 1)"
@@ -85,7 +87,11 @@ class Item extends Component {
 										state !== "jobs"
 											? <li className="action-toggle-comments">
 												<i className="icon-speech-bubble" />
-												{/* bo-href={ "/story/" + this.props.story.objectID + "/" + this.props.story.title) } */}
+
+												{/*
+													TODO: research this
+													bo-href={ "/story/" + this.props.story.objectID + "/" + this.props.story.title) }
+												*/}
 												{
 													this.props.story.num_comments > 0
 														? <a
@@ -123,7 +129,9 @@ class Item extends Component {
 							:null
 					}
 				</div>
-				{/* <!-- ngIf: story[hit.objectID] --> */}
+				{/*
+				TODO: research this
+				<!-- ngIf: story[hit.objectID] --> */}
 				<div className="item-clearfix"/>
 			</div>
 		)

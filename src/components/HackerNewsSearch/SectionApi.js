@@ -1,5 +1,5 @@
 import React from "react";
-
+//TODO: enforce consistent coding style
 export function SectionApi() {
 	return (
 		<section className="page api-doc">

@@ -34,11 +34,11 @@ export const Footer = () => {
 				</li>
 				<ListSeparator/>
 				<li>
-							<ExternalLink link={"https://github.com/algolia/hn-search"} linkText={"Fork/Contribute"}/>
+					<ExternalLink link={"https://github.com/algolia/hn-search"} linkText={"Fork/Contribute"}/>
 				</li>
 				<ListSeparator/>
 				<li>
-							<ExternalLink link={"https://status.algolia.com"} linkText={"Status"}/>
+					<ExternalLink link={"https://status.algolia.com"} linkText={"Status"}/>
 				</li>
 				<ListSeparator/>
 				<li>

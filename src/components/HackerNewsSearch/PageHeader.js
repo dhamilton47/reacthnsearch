@@ -1,6 +1,6 @@
 import React from 'react';
 import LogoHN from "./LogoHN";
-import {SearchWrapper} from "./SearchWrapper";
+import { SearchWrapper } from "./SearchWrapper";
 
 export const PageHeader = props => {
 	return (

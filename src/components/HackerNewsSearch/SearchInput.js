@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class SearchInput extends Component {
 
-
+//TODO:  need HNSearchAPI object here
 	render() {
 
 		{/*

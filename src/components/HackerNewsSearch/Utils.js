@@ -1,3 +1,3 @@
-export const makePlural = (value) => {
+export const makePlural = value => {
 	return value !== 1 ? "s" : "";
 };

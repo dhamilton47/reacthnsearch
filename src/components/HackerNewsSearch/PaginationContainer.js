@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { settings, results } from './DataForSettings';
-
+//TODO: convert settings to props
+//TODO: create HNSearchAPI object, then convert results to props
 
 class PageBack extends Component {
+	//TODO: determine of methods needed
 	handleClick() {
 //		ng-click="prevPage()"
 	}
@@ -51,6 +53,7 @@ class PageForward extends Component {
 	}
 }
 
+//TODO: figure out how to incorporate this functionality
 class PageElipsis extends Component {
 	render() {
 		return (

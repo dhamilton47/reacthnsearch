@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Algolia from '../../images/logo-algolia-white-full.svg'
-
+//TODO: convert to function
 class LogoAlgolia extends Component {
 	render() {
 		return (

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import { Footer } from "./Footer";
-import { MainHeader } from "./MainHeader";
 import { MainContent } from "./MainContent";
+import { MainHeader } from "./MainHeader";
 import Aside from "./Aside";
 
 class MainSection extends Component {

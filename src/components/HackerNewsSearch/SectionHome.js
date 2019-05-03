@@ -1,4 +1,5 @@
 import {Items} from "./Items";
+//TODO: Bring in as props
 import {results, settings, state} from "./DataForSettings";
 import * as PropTypes from "prop-types";
 import React from "react";
@@ -8,7 +9,7 @@ import PaginationContainer from "./PaginationContainer";
 const widerDateRange = (e) => {};
 const searchAllItems =  (e) => {};
 const selectInput = (e) => {};
-
+//TODO: enforce consistent coding style
 export function SectionHome(props) {
 	return <section className="search-results">
 		<Items results={results}/>
@@ -99,7 +100,11 @@ export function SectionHome(props) {
 								<p>
 									Or try popular queries:
 									<br/>
-									{/*	<!-- ngRepeat: p in populars --> */}
+
+									{/*
+										TODO: research this
+										<!-- ngRepeat: p in populars -->
+									*/}
 								</p>
 							</div>
 							: null

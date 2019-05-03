@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-//import './Sort.css';
+import React from 'react';
+
 import { state } from './DataForSettings';
 import {SectionAbout} from "./SectionAbout";
 import {SectionSettings} from "./SectionSettings";
@@ -7,7 +7,7 @@ import {SectionHelp} from "./SectionHelp";
 import {SectionApi} from "./SectionApi";
 import {SectionCoolApps} from "./SectionCoolApps";
 import {SectionHome} from "./SectionHome";
-
+//TODO: this whole mess is very ugly, refactor
 export const MainHeader = props => {
 		return (
 			<header>
@@ -199,5 +199,3 @@ export const MainHeader = props => {
 		)
 
 };
-
-//export default MainHeader;

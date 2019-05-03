@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
 
+//TODO: convert to function
 class SettingsToggle extends Component {
 	render() {
 		return (

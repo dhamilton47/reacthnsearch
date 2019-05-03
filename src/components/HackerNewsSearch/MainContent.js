@@ -19,7 +19,7 @@ export const MainContent = props => {
 			{props.page === 'help' ? <SectionHelp/> : null}
 			{props.page === 'api' ? <SectionApi/> : null}
 			{props.page === 'coolapps' ? <SectionCoolApps/> : null}
-
+			{/* TODO: see if this works */}
 			<a className="scroll-to-top fade ng-scope" href="#" title="Back to top">
 				<span className="tooltip">
 					<span>Top [↑]</span>

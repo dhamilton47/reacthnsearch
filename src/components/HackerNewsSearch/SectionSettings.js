@@ -1,5 +1,6 @@
 import React from "react";
-
+//TODO: enforce consistent coding style
+//TODO: main area left to connect to handling settings changes
 export function SectionSettings() {
 	return (
 		<section className="edit-settings">

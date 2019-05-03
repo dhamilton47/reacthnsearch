@@ -3,7 +3,7 @@ import React, {Component} from "react";
 import * as PropTypes from "prop-types";
 
 export class ItemTitle extends Component {
-
+	//TODO: try to figure out this mess
 	/* Unresolved Angular commands
 		<a
 			bo-href="{hit.url} || ('https://news.ycombinator.com/item?id=' + {hit.objectID})"
@@ -23,7 +23,9 @@ export class ItemTitle extends Component {
 				</a>
 				</h2>
 
-				{/* <!-- boIf: hit._tags[0] === 'comment' --> */}
+				{/*
+					TODO: work this out
+					<!-- boIf: hit._tags[0] === 'comment' --> */}
 				{
 					this.props.story._tags[0] === 'comment'
 						? null
