@@ -22,7 +22,7 @@ class About extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={false}/>
-				<MainSection page={"about"}/>
+				<MainSection page={"about"} settings={this.props.settings}/>
 			</div>
 		)
 	}

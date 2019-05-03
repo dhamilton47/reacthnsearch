@@ -7,7 +7,7 @@ class Starred extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={true}/>
-				<MainSection page={"starred"}/>
+				<MainSection page={"starred"} settings={this.props.settings}/>
 			</div>
 		)
 	}

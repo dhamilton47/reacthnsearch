@@ -7,7 +7,7 @@ class Hot extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={true}/>
-				<MainSection page={"hot"}/>
+				<MainSection page={"hot"} settings={this.props.settings}/>
 			</div>
 		)
 	}

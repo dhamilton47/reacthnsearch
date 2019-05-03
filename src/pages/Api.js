@@ -7,7 +7,7 @@ class Api extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={false}/>
-				<MainSection page={"api"}/>
+				<MainSection page={"api"} settings={this.props.settings}/>
 			</div>
 		)
 	}

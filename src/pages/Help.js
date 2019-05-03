@@ -7,7 +7,7 @@ class Help extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={false}/>
-				<MainSection page={"help"}/>
+				<MainSection page={"help"} settings={this.props.settings}/>
 			</div>
 		)
 	}

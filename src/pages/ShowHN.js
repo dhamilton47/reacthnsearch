@@ -7,7 +7,7 @@ class ShowHN extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={true}/>
-				<MainSection page={"showhn"}/>
+				<MainSection page={"showhn"} settings={this.props.settings}/>
 			</div>
 		)
 	}

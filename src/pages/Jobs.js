@@ -7,7 +7,7 @@ class Jobs extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={true}/>
-				<MainSection page={"jobs"}/>
+				<MainSection page={"jobs"} settings={this.props.settings}/>
 			</div>
 		)
 	}

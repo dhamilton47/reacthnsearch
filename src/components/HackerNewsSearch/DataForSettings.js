@@ -16,7 +16,7 @@ export const settings = {
 };
 
 export const state = "";
-export const isSlowConnection = false;
+//export const isSlowConnection = false;
 
 export const results = {
 	hits:
@@ -297,5 +297,5 @@ export const results = {
 	params: "query=Cogito"
 };
 
-export const hit = results.hits[0];
+//export const hit = results.hits[0];
 

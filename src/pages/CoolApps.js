@@ -7,7 +7,7 @@ class CoolApps extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={false}/>
-				<MainSection page={"coolapps"}/>
+				<MainSection page={"coolapps"} settings={this.props.settings}/>
 			</div>
 		)
 	}

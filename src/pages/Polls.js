@@ -7,7 +7,7 @@ class Polls extends Component {
 		return (
 			<div className="container">
 				<PageHeader hasSearch={true}/>
-				<MainSection page={"polls"}/>
+				<MainSection page={"polls"} settings={this.props.settings}/>
 			</div>
 		)
 	}
