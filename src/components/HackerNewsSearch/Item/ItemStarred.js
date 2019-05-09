@@ -3,7 +3,9 @@ import React from "react";
 //TODO: fix onClick and figure out className
 export const ItemStarred = props => {
 	return <li className="action-toggle-star">
+		{/* eslint-disable-next-line */}
 		<a
+
 			href="#"
 			className="{ starred: this.isStarred(this.props.story.objectID) }"
 			onClick={props.onClick}

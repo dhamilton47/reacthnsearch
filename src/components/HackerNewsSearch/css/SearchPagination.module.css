@@ -1,0 +1,26 @@
+.search-pagination {
+    padding: 20px 0 0;
+    text-align: center;
+    background: transparent
+}
+
+.search-pagination li {
+    display: inline-block
+}
+
+.search-pagination li button {
+    margin: 3px;
+    padding: 5px 10px;
+    font-size: 12px;
+    text-align: center;
+    background: transparent;
+    color: #9d9d9d;
+    font-weight: normal;
+    border: 1px solid #9d9d9d;
+    outline: none
+}
+
+.search-pagination li.active button {
+    border-color: #FF742B;
+    color: #FF742B
+}

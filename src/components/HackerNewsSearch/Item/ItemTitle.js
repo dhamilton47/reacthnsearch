@@ -1,10 +1,11 @@
 import React, {Component} from "react";
+import itemTitleStyles from './ItemTitle.module.css'
 //import {hit, settings, state} from './DataForSettings';
 import * as PropTypes from "prop-types";
 
 export class ItemTitle extends Component {
-	//TODO: try to figure out this mess
-	/* Unresolved Angular commands
+	/*TODO: try to figure out this mess
+	  TODO: Unresolved Angular commands
 		<a
 			bo-href="{hit.url} || ('https://news.ycombinator.com/item?id=' + {hit.objectID})"
 			bo-html="hit._highlightResult.title.value"
@@ -14,8 +15,8 @@ export class ItemTitle extends Component {
 	 */
 	render() {
 		return (
-			<React.Fragment>
-				<h2>
+			<React.Fragment >
+				<h2 className={itemTitleStyles.itemTitle}>
 				<a
 					href={this.props.story._highlightResult.url.value}
 				>

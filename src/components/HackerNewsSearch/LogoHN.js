@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
+import logoHNStyle from './LogoHN.module.css';
+
 //TODO: convert to function
 class LogoHN extends Component {
 	render() {
 		return (
-			<Link className="logo" to="/">
+			<Link className={logoHNStyle.logoHN} to="/">
 				<img
 					src="https://hn.algolia.com/assets/logo-hn-search.png"
 					alt="Hacker News"
 				/>
-				<div className="logo-name">
+				<div>
 					Search<br/>Hacker News
 				</div>
 			</Link>

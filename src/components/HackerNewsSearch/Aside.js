@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import asideStyle from './Aside.module.css';
 
 class Aside extends Component {
 	render() {
 		if(this.props.settings.style === 'experimental') {
 			return (
-				<div>
+				<div className={asideStyle.aside}>
 					<aside className="sidebar">
 						<nav>
 							<ul>

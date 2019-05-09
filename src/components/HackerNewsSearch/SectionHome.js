@@ -11,7 +11,7 @@ const searchAllItems =  (e) => {};
 const selectInput = (e) => {};
 //TODO: enforce consistent coding style
 export function SectionHome(props) {
-	return <section className="search-results">
+	return <section>
 		<Items results={results}/>
 
 		{
@@ -19,16 +19,16 @@ export function SectionHome(props) {
 				? <div className="no-results text-center hide">
 					<p>You don't have any starred items.</p>
 				</div>
-				: null}
-
+				: null
+		}
 
 		{
 			results.hits.length === 0 && state === "starred" && settings.dateRange !== "all"
 				? <div className="no-results text-center hide">
 					<p>You don't have any starred items <strong>for this period</strong>.</p>
 				</div>
-				: null}
-
+				: null
+		}
 
 		{
 			results.hits.length === 0 && state !== "starred"
@@ -75,6 +75,7 @@ export function SectionHome(props) {
 									{
 										props.query
 											? <li className="hide">
+												{/* eslint-disable-next-line */}
 												<a href="#" onClick={selectInput}>Try different keywords.</a>
 											</li>
 											: null
@@ -82,6 +83,7 @@ export function SectionHome(props) {
 
 									{settings.dateRange !== "all"
 										? <li className="hide">
+											{/* eslint-disable-next-line */}
 											<a href="#" onClick={widerDateRange}>Try a wider date range.</a>
 										</li>
 										: null}
@@ -89,6 +91,7 @@ export function SectionHome(props) {
 									{
 										settings.type !== "all"
 											? <li>
+												{/* eslint-disable-next-line */}
 												<a href="#" onClick={searchAllItems}>
 													Search also for {settings.type === "story" ? <span>comments</span> : null}
 												</a>

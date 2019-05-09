@@ -1,0 +1,68 @@
+.item-actions {
+    font-size: 12px;
+    position: absolute;
+    top: 25px;
+    right: 20px
+}
+
+.item-actions .comments-bubble {
+    display: block;
+    padding: 0 7px;
+    background-color: #939393;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: -4px
+}
+
+.item-actions .comments-bubble:before {
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-right: 9px solid #939393;
+    position: absolute;
+    right: 4px;
+    bottom: -50%
+}
+
+.item-actions .comments-bubble.no-comments {
+    background-color: #e0e0e0
+}
+
+.item-actions .comments-bubble.no-comments:before {
+    height: 0;
+    width: 0;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-right:9px solid #e0e0e0
+}
+
+.item-actions .comments-bubble:hover:not(.no-comments) {
+    background-color: #ff8545
+}
+
+.item-actions .comments-bubble:hover:not(.no-comments):before {
+    height: 0;
+    width: 0;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-right: 9px solid #ff8545
+}
+
+.item-actions a {
+    color: white;
+    display: block;
+    width: 100%
+}
+
+.item-actions a i {
+    margin-left: 15px;
+    font-size: 18px
+}
+
+.item-actions a:hover i {
+    color: #FF742B
+}

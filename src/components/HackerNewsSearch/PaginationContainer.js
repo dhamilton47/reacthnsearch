@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import paginationStyle from './Pagination.module.css'
 import { settings, results } from './DataForSettings';
 //TODO: convert settings to props
 //TODO: create HNSearchAPI object, then convert results to props
@@ -54,6 +55,8 @@ class PageForward extends Component {
 }
 
 //TODO: figure out how to incorporate this functionality
+
+// eslint-disable-next-line
 class PageElipsis extends Component {
 	render() {
 		return (
@@ -107,7 +110,7 @@ class PaginationContainer extends Component {
 			}
 
 			hasPagination =  (
-				<div className="pagination-container">
+				<div className={paginationStyle.pagination}>
 					<ul className="search-pagination">
 						<PageBack/>
 						{pageArray.map(number => <PageNumber key={number} page={number}/>)}

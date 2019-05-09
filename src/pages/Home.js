@@ -5,8 +5,8 @@ import MainSection from '../components/HackerNewsSearch/MainSection';
 class Home extends Component {
 	render() {
 		return (
-			<div className="container">
-				<PageHeader hasSearch={true}/>
+			<div>
+				<PageHeader hasSearch={true} settings={this.props.settings}/>
 				<MainSection page={"home"} settings={this.props.settings}/>
 			</div>
 		)

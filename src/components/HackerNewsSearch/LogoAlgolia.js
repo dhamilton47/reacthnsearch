@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Algolia from '../../images/logo-algolia-white-full.svg'
+import logoAlgoliaStyle from './LogoAlgolia.module.css';
 //TODO: convert to function
 class LogoAlgolia extends Component {
 	render() {
 		return (
-			<span className="powered-by">
+			<span className={logoAlgoliaStyle.base}>
 				by
 			<a
 				href={"https://www.algolia.com/?utm_source=hn_search&utm_medium=link&utm_term=logo&utm_campaign=hn_algolia"}

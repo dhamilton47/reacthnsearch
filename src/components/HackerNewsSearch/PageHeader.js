@@ -1,17 +1,19 @@
 import React from 'react';
+import pageHeaderStyle from './PageHeader.module.css';
 import LogoHN from "./LogoHN";
 import { SearchWrapper } from "./SearchWrapper";
 
 export const PageHeader = props => {
 	return (
-		<header className="page-header">
-			<div className="logo-wrapper">
-				<LogoHN/>
-			</div>
+		<header className={pageHeaderStyle.pageHeader}>
+			<LogoHN/>
+				{/* <div>
+					<LogoHN/>
+				</div> */}
 
 			{
 				props.hasSearch ?
-					<SearchWrapper/>
+					<SearchWrapper settings={props.settings}/>
 					: null
 			}
 		</header>

@@ -15,8 +15,8 @@ import Jobs from '../../pages/Jobs';
 import Starred from '../../pages/Starred';
 
 import '../App/App.css';
-import '../HackerNewsSearch/default.css';
-import '../HackerNewsSearch/experimental.css';
+//import '../HackerNewsSearch/default.css';
+//import '../HackerNewsSearch/experimental.css';
 
 class App extends Component {
 	constructor(props) {
@@ -24,7 +24,7 @@ class App extends Component {
 		this.state = {
 			settings: {
 				showThumbnails: false,
-				style: "experimental",
+				style: "default",
 				dateRange: "all",
 				page: 1,
 				login: false
@@ -36,7 +36,7 @@ class App extends Component {
 	render() {
 		return (
 			<Router>
-				<div>
+
 					{/* <Route path="/" exact component={Home}/>
 					<Route path="/about/" component={About}/>
 					<Route path="/settings/" component={Settings}/>
@@ -96,7 +96,7 @@ class App extends Component {
 						path="/starred"
 							render={props => <Starred settings={this.state.settings}/>}
 					/>
-				</div>
+
 			</Router>
 		);
 	}

@@ -11,7 +11,7 @@ import About from '../pages/About';
 import Footer from '../components/HackerNewsSearch/Footer';
 import Items from '../components/HackerNewsSearch/Items';
 import SearchWrapper from '../components/HackerNewsSearch/SearchWrapper';
-import Item from '../components/HackerNewsSearch/Item';
+import Item from '../components/HackerNewsSearch/Item/Item';
 import { PageHeader } from "../components/HackerNewsSearch/PageHeader";
 import MainSection from "../components/HackerNewsSearch/MainSection";
 

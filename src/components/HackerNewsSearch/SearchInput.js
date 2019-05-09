@@ -1,18 +1,19 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import searchInputStyle from './SearchInput.module.css';
 
 class SearchInput extends Component {
 
 //TODO:  need HNSearchAPI object here
+/*
+	ng-model="$parent.query"
+	ng-model-options="{debounce: 100}"
+	ng-blur="blurred()"
+	ng-keyup="keyup($event)"
+*/
 	render() {
 
-		{/*
-		ng-model="$parent.query"
-		ng-model-options="{debounce: 100}"
-		ng-blur="blurred()"
-		ng-keyup="keyup($event)"
-		*/}
 		return (
-			<div className="item-input-wrapper">
+			<div className={searchInputStyle.base}>
 				<i className="icon-search"/>
 				<input
 					type="search"

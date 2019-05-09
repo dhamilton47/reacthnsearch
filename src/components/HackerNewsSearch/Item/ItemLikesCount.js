@@ -1,12 +1,13 @@
 import React, {Component} from "react";
-import { makePlural } from "./Utils";
+import { makePlural } from "../Utils";
+import {Icon} from "../Icon";
 import * as PropTypes from "prop-types";
 
 export class ItemLikesCount extends Component {
 	render() {
 		return (
 			<li>
-				<i className="icon-heart"/>
+				<Icon icon={"icon-heart"} settings={this.props.settings}/>
 				<a
 					title="See original post on HN"
 					href={ "https://news.ycombinator.com/item?id=" + this.props.story.objectID }

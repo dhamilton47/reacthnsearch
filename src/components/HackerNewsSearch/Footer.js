@@ -2,10 +2,11 @@ import React from "react";
 import { Link} from "react-router-dom";
 import { ListSeparator } from "./ListSeparator";
 import { ExternalLink } from "./ExternalLink";
+import footerStyle from  './Footer.module.css';
 
 export const Footer = () => {
 	return (
-		<footer>
+		<footer className={footerStyle.footer}>
 			<ul className="list-inline">
 				{/*
 				<li>

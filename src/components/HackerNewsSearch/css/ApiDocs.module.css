@@ -1,0 +1,50 @@
+.api-doc .label-get {
+    text-transform: capitalize;
+    background-color: #4699FF;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px
+}
+
+.api-doc .property {
+    font-weight: bold
+}
+
+.api-doc .type-null {
+    color: gray
+}
+
+.api-doc .type-boolean {
+    color: firebrick
+}
+
+.api-doc .type-number {
+    color: blue
+}
+
+.api-doc .type-string {
+    color: green
+}
+
+.api-doc .callback-function {
+    color: gray
+}
+
+.api-doc .collapsible {
+    margin-left: 10px
+}
+
+.api-doc .hoverable {
+    padding: 1px 2px;
+    border-radius: 2px
+}
+
+.api-doc .hovered {
+    background-color: #ebeef9
+}
+
+.api-doc .collapser {
+    padding-right:6px;
+    padding-left:6px
+}

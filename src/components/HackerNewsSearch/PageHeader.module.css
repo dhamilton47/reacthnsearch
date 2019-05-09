@@ -1,0 +1,29 @@
+.pageHeader {
+    background-color: #FF742B;
+    border: none;
+    box-sizing: border-box;
+    color: black;
+    display: block;
+    float: inherit;
+    font-family: Verdana, Geneva, sans-serif !important;
+    font-size: 1em;
+    height: 60px;
+    line-height: 1.5;
+    padding: 5px;
+    position: fixed;
+    -webkit-font-smoothing: antialiased;
+    z-index: 15;
+}
+
+@media screen and (max-width: 1200px) {
+    .pageHeader {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .pageHeader {
+        margin: 0 auto;
+        width: 80%;
+    }
+}

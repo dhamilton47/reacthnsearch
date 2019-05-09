@@ -1,0 +1,12 @@
+.base {
+    float: left;
+    margin-top: 3px;
+    position: relative;
+    width: calc(90% - 230px);
+}
+
+@media screen and (max-width: 768px) {
+    .base {
+        width: calc(90% - 60px);
+    }
+}

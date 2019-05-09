@@ -6,11 +6,12 @@ import { ItemSourceLink } from "./ItemSourceLink";
 import { ItemPosted } from "./ItemPosted";
 import { ItemTitle } from "./ItemTitle";
 import { ItemStarred } from "./ItemStarred";
-import { ShowStoryText } from "./ShowStoryText";
-import { ShowCommentText } from "./ShowCommentText";
-import { makePlural } from "./Utils";
+import { ShowStoryText } from "../ShowStoryText";
+import { ShowCommentText } from "../ShowCommentText";
+import { makePlural } from "../Utils";
+import itemStyles from './Item.module.css'
 
-import {settings, state} from './DataForSettings';
+import {settings, state} from '../DataForSettings';
 //TODO: pass these in as props
 class Item extends Component {
 	//TODO: Investigate the need for these methods
@@ -20,16 +21,18 @@ class Item extends Component {
 	isStarred() {}
 	loadComments() {}
 	toggleStar() {}
+/*
+	TODO: work this out
+
+	<div className={ "item item_"+ this.props.story.objectID + (story[this.props.story.objectID] ? " item-show-comment" : "") }
+	     ng-click="clickHit(this.props.story.objectID, $index + 1)"
+	>
+	<div className={ "item item_"+ this.props.story.objectID }
+*/
 	render() {
-		//TODO: work this out
-		{/*
-			<div className={ "item item_"+ this.props.story.objectID + (story[this.props.story.objectID] ? " item-show-comment" : "") }
-			     ng-click="clickHit(this.props.story.objectID, $index + 1)"
-			>
-		*/}
 
 		return (
-			<div className={ "item item_"+ this.props.story.objectID }
+			<div className={itemStyles.item}
 			     onClick={this.clickHit(this.props.story.objectID)}
 			>
 				<div className="item-main">
@@ -39,22 +42,22 @@ class Item extends Component {
 								? null : null
 						}
 						<div className="item-title-and-infos">
-							<ItemTitle story={this.props.story}/>
+							<ItemTitle settings={settings} story={this.props.story}/>
 
 							<ul className="item-infos list-inline">
 								{
 									this.props.story.points
-										? <ItemLikesCount story={this.props.story}/>
+										? <ItemLikesCount settings={settings} story={this.props.story}/>
 										: null
 								}
 
-								<ItemAuthor story={this.props.story}/>
+								<ItemAuthor settings={settings} story={this.props.story}/>
 
-								<ItemPosted story={this.props.story}/>
+								<ItemPosted settings={settings} story={this.props.story}/>
 
 								{
 									settings.style === "default"
-										? <ItemCommentCount story={this.props.story}/>
+										? <ItemCommentCount settings={settings} story={this.props.story}/>
 										: null
 								}
 
@@ -114,6 +117,7 @@ class Item extends Component {
 									}
 
 									<li className="action-share">
+										{/* eslint-disable-next-line */}
 										<a className="placeholder">
 											<i className="icon-share"/>
 										</a>

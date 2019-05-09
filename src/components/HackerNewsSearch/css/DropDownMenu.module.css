@@ -1,0 +1,39 @@
+.dropdown-menu {
+    position: absolute;
+    float: left;
+    top: 100%;
+    left: 0;
+    margin-left: 50px;
+    z-index: 1000;
+    display: none;
+    min-width: 160px;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2)
+}
+
+.dropdown-menu>li {
+    padding: 2px 5px
+}
+
+.dropdown-menu>li a {
+    color: #5C5C5C
+}
+
+.dropdown-menu>li em {
+    font-weight: bold;
+    font-style: normal
+}
+
+.dropdown-menu>li.active {
+    background: #FF742B
+}
+
+.dropdown-menu>li.active a {
+    color: white
+}

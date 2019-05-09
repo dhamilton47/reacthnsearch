@@ -1,0 +1,59 @@
+.edit-settings {
+    padding: 30px 50px
+}
+
+@media screen and (max-width: 480px) {
+    .edit-settings {
+        padding: 0 10px
+    }
+}
+
+.edit-settings h2 {
+    color: #9d9d9d;
+    margin-bottom: 10px
+}
+
+.edit-settings .form-group {
+    margin-bottom: 1em;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto
+}
+
+@media screen and (max-width: 480px) {
+    .edit-settings .form-group {
+        font-size:13px
+    }
+}
+
+.edit-settings .form-group:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.edit-settings .form-group:last-child {
+    margin-bottom: 0
+}
+
+.edit-settings .form-group .label-control {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%
+}
+
+.edit-settings .form-group .label-control:last-child {
+    margin-right: 0
+}
+
+.edit-settings .form-group .form-control {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%
+}
+
+.edit-settings .form-group .form-control:last-child {
+    margin-right: 0
+}

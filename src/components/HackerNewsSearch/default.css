@@ -852,9 +852,10 @@ nprogress-spinner {
 
 @font-face {
     font-family: 'icomoon';
-    src: url("../../images/icomoon.eot") format("embedded-opentype"),
-    url("../../images/icomoon.woff") format("woff"),
-    url("../../images/icomoon.ttf") format("truetype");
+    src:
+        url("../../images/icomoon.eot") format("embedded-opentype"),
+        url("../../images/icomoon.woff") format("woff"),
+        url("../../images/icomoon.ttf") format("truetype");
 
     /*    src: url("/assets/icomoon.eot?-p3idmi");*/
     /*    src: url("/assets/icomoon.eot?#iefix-p3idmi") format("embedded-opentype"),
