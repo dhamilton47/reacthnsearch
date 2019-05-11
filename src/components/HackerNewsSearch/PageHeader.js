@@ -2,17 +2,14 @@ import React from 'react';
 import pageHeaderStyle from './PageHeader.module.css';
 import LogoHN from "./LogoHN";
 import { SearchWrapper } from "./SearchWrapper";
-
+// TODO: refactor null to a 'back' button
 export const PageHeader = props => {
 	return (
 		<header className={pageHeaderStyle.pageHeader}>
 			<LogoHN/>
-				{/* <div>
-					<LogoHN/>
-				</div> */}
 
 			{
-				props.hasSearch ?
+				props.page === "home" ?
 					<SearchWrapper settings={props.settings}/>
 					: null
 			}
