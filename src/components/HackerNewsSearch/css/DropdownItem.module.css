@@ -1,0 +1,34 @@
+.base.divider {
+    background: #e6e8ea;
+    padding: 2px 0;
+}
+
+.base a {
+    border-bottom: 1px solid #e6e8ea;
+    color: #5C5C5C;
+    display: block;
+    padding: 4px 12px;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.base i {
+    color: inherit;
+    float: right;
+}
+
+.base:first-of-type a {
+    border-radius: 5px 5px 0 0;
+}
+
+.base:last-of-type a {
+    border: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.base:hover a {
+    background: transparent;
+    color: #FF742B;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import SearchInput from "./SearchInput";
 import LogoAlgolia from "./LogoAlgolia";
 import SettingsToggle from "./SettingsToggle";
-import searchWrapperStyle from './SearchWrapper.module.css';
+import searchWrapperStyle from './css/SearchWrapper.module.css';
 
 
 export const SearchWrapper = props => {

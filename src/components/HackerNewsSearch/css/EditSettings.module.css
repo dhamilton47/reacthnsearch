@@ -1,59 +1,88 @@
-.edit-settings {
-    padding: 30px 50px
+.base {
+    padding: 0 50px 30px;
 }
 
-@media screen and (max-width: 480px) {
-    .edit-settings {
-        padding: 0 10px
-    }
-}
-
-.edit-settings h2 {
-    color: #9d9d9d;
-    margin-bottom: 10px
-}
-
-.edit-settings .form-group {
+.formGroup {
+    composes: base;
     margin-bottom: 1em;
-    max-width: 68em;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    max-width: 68em;
+    padding: 0;
+}
+
+.labelControl {
+    background: transparent;
+    color: #5c5c5c;
+    composes: formGroup;
+    display: block;
+    float: left;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    margin-right: 2.3576515979%;
+    text-align: right;
+    width: 48.821174201%;
+}
+
+.formControl {
+    composes: formGroup;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
 }
 
 @media screen and (max-width: 480px) {
-    .edit-settings .form-group {
-        font-size:13px
+    .base {
+        padding: 0 10px;
     }
 }
 
-.edit-settings .form-group:after {
+.base h2 {
+    color: #5C5C5C;
+    display: inline-block;
+    font-family: Verdana, Geneva, sans-serif !important;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.25;
+    margin: 0;
+    margin-top: 1em;
+    text-rendering: optimizeLegibility;
+}
+
+fieldset {
+    background: transparent;
+    border: none;
+    border-top: solid 1px #cccccc;
+    margin: 0 0 0.75em 0;
+    padding: 1.5em;
+}
+
+@media screen and (max-width: 480px) {
+    .formGroup {
+        font-size:13px;
+    }
+}
+
+.formGroup:after {
     content: "";
     display: table;
-    clear: both
+    clear: both;
 }
 
-.edit-settings .form-group:last-child {
-    margin-bottom: 0
+.formGroup:last-child {
+    margin-bottom: 0;
 }
 
-.edit-settings .form-group .label-control {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 48.821174201%
+
+.labelControl:last-child {
+    margin-right: 0;
 }
 
-.edit-settings .form-group .label-control:last-child {
-    margin-right: 0
+.formControl {
+    height: 2em;
+    line-height: 2em;
 }
 
-.edit-settings .form-group .form-control {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 48.821174201%
-}
-
-.edit-settings .form-group .form-control:last-child {
-    margin-right: 0
+.formControl:last-child {
+    margin-right: 0;
 }

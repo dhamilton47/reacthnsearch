@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import paginationStyle from './Pagination.module.css'
+import paginationStyle from './css/Pagination.module.css'
 import { settings, results } from './DataForSettings';
 //TODO: convert settings to props
 //TODO: create HNSearchAPI object, then convert results to props

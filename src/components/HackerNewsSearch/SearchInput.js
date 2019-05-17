@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import searchInputStyle from './SearchInput.module.css';
+import searchInputStyle from './css/SearchInput.module.css';
 
 class SearchInput extends Component {
 

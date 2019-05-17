@@ -1,8 +1,9 @@
 import React from "react";
+import pageStyle from "./css/MainContent.module.css";
 //TODO: enforce consistent coding style
-export function SectionHelp() {
+export function MainContentHelp() {
 	return (
-		<section className="page">
+		<section className={pageStyle.page}>
 			<h3>Advanced search syntax</h3>
 			<ul>
 				<li>Use <code>"</code> to match a particular sequence of terms <code>"search engine"</code>,</li>

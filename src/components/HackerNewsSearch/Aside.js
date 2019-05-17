@@ -1,21 +1,20 @@
-import React, { Component } from 'react';
-import { Link } from "react-router-dom";
-import asideStyle from './Aside.module.css';
+import React, {Component} from 'react';
+import {Link} from "react-router-dom";
+import asideStyle from './css/Aside.module.css';
+import {ListLink} from "./ListLink";
 
 class Aside extends Component {
 	render() {
-		if(this.props.settings.style === 'experimental') {
+		if(this.props.settings.settings.style === 'experimental') {
 			return (
-				<div className={asideStyle.aside}>
-					<aside className="sidebar">
+				<div>
+					<aside className={asideStyle.base}>
 						<nav>
 							<ul>
 								<li>
-									<Link to="/">
-										<i className="icon-news"/>
-										All
-									</Link>
+									<Link to="/"><i className="icon-news"/>All</Link>
 								</li>
+								<ListLink location={this.props.settings.lists.routes.home}/>
 								<li>
 									<Link to={"/hot"}>
 										<i className="icon-fire"/>

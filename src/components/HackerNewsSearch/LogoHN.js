@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
-import logoHNStyle from './LogoHN.module.css';
+import logoHNStyle from './css/LogoHN.module.css';
 
 //TODO: convert to function
 class LogoHN extends Component {

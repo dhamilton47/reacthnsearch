@@ -1,21 +1,24 @@
 import React from 'react';
 
-import { state } from './DataForSettings';
-//import {SectionAbout} from "./SectionAbout";
-//import {SectionSettings} from "./SectionSettings";
-//import {SectionHelp} from "./SectionHelp";
-//import {SectionApi} from "./SectionApi";
-//import {SectionCoolApps} from "./SectionCoolApps";
-//import {SectionHome} from "./SectionHome";
-import mainHeaderStyle from './MainHeader.module.css';
-
-const toggleNav = () => {};
+import {state} from './DataForSettings';
+//import {MainContentAbout} from "./MainContentAbout";
+//import {MainContentSettings} from "./MainContentSettings";
+//import {MainContentHelp} from "./MainContentHelp";
+//import {MainContentApi} from "./MainContentApi";
+//import {MainContentCoolApps} from "./MainContentCoolApps";
+//import {MainContentHome} from "./MainContentHome";
+import mainHeaderStyle from './css/MainHeader.module.css';
+import wrapDropDownMenuStyle from './css/WrapDropdownMenu.module.css';
+import {SlidingMenu} from "./SlidingMenu";
+import DropdownList from "./DropdownList";
+import DropdownItem from "./DropdownItem";
+import Dropdown from "./Dropdown";
 
 //TODO: this whole mess is very ugly, refactor
 export const MainHeader = props => {
 
 	return (
-		<header className={mainHeaderStyle.mainHeader}>
+		<div id="Main - Header" className={mainHeaderStyle.base}>
 			{ props.page === 'about' ? <h1>About</h1> : null }
 			{ props.page === 'settings' ? <h1>Settings</h1> : null }
 			{ props.page === 'help' ? <h1>Help</h1> : null }
@@ -24,204 +27,48 @@ export const MainHeader = props => {
 			{
 				props.page === 'home'
 					? <React.Fragment>
-						{/* eslint-disable-next-line */}
-						<a
-							className="sliding-menu-button"
-						    onClick={toggleNav}
-						    type="button"
-						/>
+						<SlidingMenu settings={props.settings}/>
 						{
 							state
 								? <span className="state-title">
 						{/* eslint-disable-next-line */}
-									<h1></h1>
+									<h1>{state}</h1>
 									<span className="filter-label">in</span>
 								</span>
-								: null
+								: <span className="filter-label">Search</span>
 						}
+						<Dropdown selected={"Stories"} list={props.settings.lists.searchWhat}/>
 
-						<span className="filter-label">
-							Search
-						</span>
-						<div className="type-dropdown wrap-dd-select">
-							<span className="selected">
-								Stories
-							</span>
-							<ul className="dropdown">
-								<li className="dropdown-item">
-									{/* eslint-disable-next-line */}
-									<a
-										href=""
-										className="dropdown-item"
-										onClick={null}
-									>
-										All
-									</a>
-								</li>
-								<li className="dropdown-item">
-									{/* eslint-disable-next-line */}
-									<a
-										href=""
-										className="dropdown-item"
-										onClick={null}
-									>
-										Stories
-									</a>
-								</li>
-								<li className="dropdown-item">
-									{/* eslint-disable-next-line */}
-									<a
-										href=""
-										className="dropdown-item"
-										onClick={null}
-									>
-										Comments
-									</a>
-								</li>
-							</ul>
-						</div>
-						<span className="filter-label">
-							by
-						</span>
-						<div className="type-dropdown wrap-dd-select">
-							<span className="selected">
-								Popularity
-							</span>
-							<ul className="dropdown">
-								<li className="dropdown-item">
-									{/* eslint-disable-next-line */}
-									<a
-										href=""
-										className="dropdown-item"
-										onClick={null}
-									>
-										Popularity
-									</a>
-								</li>
-								<li className="dropdown-item">
-									{/* eslint-disable-next-line */}
-									<a
-										href=""
-										className="dropdown-item"
-										onClick={null}
-									>
-										Date
-									</a>
-								</li>
-							</ul>
-						</div>
-						<span className="filter-label">
-							for
-						</span>
-						<div className="type-dropdown wrap-dd-select">
-							<span className="selected">
-								All time
-							</span>
-							<ul className="dropdown">
-								<li className="dropdown-item">
-									{/* eslint-disable-next-line */}
-									<a
-										href=""
-										className="dropdown-item"
-										onClick={null}
-									>
-										All time
-									</a>
-								</li>
-								<li className="dropdown-item">
-									{/* eslint-disable-next-line */}
-									<a
-										href=""
-										className="dropdown-item"
-										onClick={null}
-									>
-										Last 24h
-									</a>
-								</li>
-								<li className="dropdown-item">
-									{/* eslint-disable-next-line */}
-									<a
-										href=""
-										className="dropdown-item"
-										onClick={null}
-									>
-										Past Week
-									</a>
-								</li>
-								<li className="dropdown-item">
-									{/* eslint-disable-next-line */}
-									<a
-										href=""
-										className="dropdown-item"
-										onClick={null}
-									>
-										Past Month
-									</a>
-								</li>
-								<li className="dropdown-item">
-									{/* eslint-disable-next-line */}
-									<a
-										href=""
-										className="dropdown-item"
-										onClick={null}
-									>
-										Past Year
-									</a>
-								</li>
-								<li className="dropdown-item">
-									{/* eslint-disable-next-line */}
-									<a
-										href=""
-										className="dropdown-item"
-										onClick={null}
-									>
-										Custom Range
-									</a>
-								</li>
-							</ul>
-						</div>
-						<ul className="list-inline search-infos">
+						<span className="filter-label">by</span>
+						<Dropdown selected={"Popularity"} list={props.settings.lists.searchBy}/>
+
+						<span className="filter-label">for</span>
+						<Dropdown selected={"All time"} list={props.settings.lists.searchTimePeriod}/>
+
+						<ul className={mainHeaderStyle.baseSearchInfos}>
 							<li># result(s) (0.00N seconds)</li>
-							<li className="action-share">
+							<li className={mainHeaderStyle.baseSearchInfosActionShare}>
 								{/* eslint-disable-next-line */}
 								<a className="placeholder"/>
-								<div className="wrap-dd-menu">
+								<div className={wrapDropDownMenuStyle.base}>
 									<a
 										href="https://hn.algolia.com/?sort=byPopularity&prefix&page=0&dateRange=all&type=story&query="
 										className="dropdown-share"
 									>
 										<i className="icon-share"/>
 									</a>
-									<ul className="dropdown">
-										<li className="dropdown-item">
-											{/* eslint-disable-next-line */}
-											<a href="" className="dropdown-item">
-												<i className="icon-twitter"/>
-												Share on Twitter
-											</a>
-										</li>
-										<li className="dropdown-item">
-											{/* eslint-disable-next-line */}
-											<a href="" className="dropdown-item">
-												<i className="icon-facebook"/>
-												Share on Facebook
-											</a>
-										</li>
-										<li className="dropdown-item">
-											{/* eslint-disable-next-line */}
-											<a href="" className="dropdown-item">
-												<i className="icon-envelope-o"/>
-												Share by Email
-											</a>
-										</li>
-									</ul>
+									<DropdownList>
+										<DropdownItem hasIcon={"icon-twitter"} text={"Share on Twitter"}/>
+										<DropdownItem hasIcon={"icon-facebook"} text={"Share on Facebook"}/>
+										<DropdownItem hasIcon={"icon-envelope-o"} text={"Share by Email"}/>
+									</DropdownList>
 								</div>
 							</li>
 						</ul>
 					</React.Fragment>
 					: null
 			}
-		</header>
+		</div>
 	)
 
 };

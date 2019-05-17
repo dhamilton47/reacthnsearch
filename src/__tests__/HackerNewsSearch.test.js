@@ -8,7 +8,7 @@ import App from '../components/App/App';
 import Home from '../pages/Home';
 import About from '../pages/About';
 
-import Footer from '../components/HackerNewsSearch/Footer';
+import Footer from '../components/HackerNewsSearch/MainFooter';
 import Items from '../components/HackerNewsSearch/Items';
 import SearchWrapper from '../components/HackerNewsSearch/SearchWrapper';
 import Item from '../components/HackerNewsSearch/Item/Item';

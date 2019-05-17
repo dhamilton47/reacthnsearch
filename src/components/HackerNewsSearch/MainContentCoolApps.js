@@ -1,8 +1,9 @@
 import React from "react";
+import pageStyle from "./css/MainContent.module.css";
 //TODO: enforce consistent coding style
-export function SectionCoolApps() {
+export function MainContentCoolApps() {
 	return (
-		<section className="page">
+		<section className={pageStyle.page}>
 			<p>We love <a href="https://news.ycombinator.com">Hacker News</a> and apps based on it. If you're building an app based on our API, please <a href="https://github.com/algolia/hn-search/pulls">let us know</a>!</p>
 			<h3>Web</h3>
 			<ul>

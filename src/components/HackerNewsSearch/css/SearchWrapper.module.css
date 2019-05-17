@@ -1,116 +1,12 @@
-.search-wrapper {
+.base {
+    float: left;
+    margin-top: 3px;
     position: relative;
-    margin-top: 8px
+    width: calc(90% - 230px);
 }
 
-.small-header .search-wrapper {
-    margin-top: 3px
-}
-
-.search-wrapper .icon-search {
-    position: absolute;
-    top: 8px;
-    left: 14px;
-    color: #FF742B;
-    font-size: 24px
-}
-
-.search-wrapper .item-input-wrapper {
-    display: inline-block;
-    width: calc(100% - 100px);
-    margin-right: 5px
-}
-
-.search-wrapper input {
-    border-radius: 25px;
-    box-shadow: none;
-    line-height: 25px;
-    padding: 0 15px 0 50px;
-    height: 42px;
-    border-color: #b6b6b6
-}
-
-.search-wrapper input:focus {
-    outline: 0;
-    box-shadow: none;
-    border-color: #2A9ED9
-}
-
-.search-wrapper input::-webkit-input-placeholder {
-    color: #ccc;
-    font-size: 14px;
-    font-weight: 300
-}
-
-.search-wrapper input::-moz-placeholder {
-    color: #ccc;
-    font-size: 14px;
-    font-weight: 300
-}
-
-.search-wrapper input:-moz-placeholder {
-    color: #ccc;
-    font-size: 14px;
-    font-weight: 300
-}
-
-.search-wrapper input:-ms-input-placeholder {
-    color: #ccc;
-    font-size: 14px;
-    font-weight: 300
-}
-
-.search-wrapper input::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    background: #ccc;
-    border-radius: 50%;
-    position: relative
-}
-
-.search-wrapper input::-webkit-search-cancel-button:hover {
-    background-color: #9d9d9d;
-    cursor: pointer
-}
-
-.search-wrapper input::-webkit-search-cancel-button:after {
-    display: block;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    color: white;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    content: "×"
-}
-
-.search-wrapper .type-dropdown {
-    position: absolute;
-    top: 5px;
-    left: 15px
-}
-
-.search-wrapper .powered-by {
-    width: 80px;
-    font-size: 12px;
-    display: inline-block;
-    position: relative
-}
-
-
-@media screen and (max-width: 480px) {
-    .search-wrapper .powered-by{
-        display:none
+@media screen and (max-width: 768px) {
+    .base {
+        width: calc(90% - 60px);
     }
-}
-
-.search-wrapper .powered-by img {
-    width: 60px;
-    position: relative;
-    top: -2px;
-    left: 4px;
-    vertical-align: bottom
 }

@@ -1,6 +1,6 @@
 import React from "react";
 //TODO: enforce consistent coding style
-export function SectionApi() {
+export function MainContentApi() {
 	return (
 		<section className="page api-doc">
 			<p>This API is built on top of <a href="https://www.algolia.com">Algolia Search's API</a>. It enables

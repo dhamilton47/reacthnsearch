@@ -1,8 +1,10 @@
 import React from "react";
+import pageStyle from './css/MainContent.module.css';
+
 //TODO: enforce consistent coding style
-export function SectionAbout() {
+export function MainContentAbout() {
 	return (
-		<section className="page">
+		<section className={pageStyle.page}>
 			<p>HN Search provides real-time full-text search for the <a
 				href="http://news.ycombinator.com">HackerNews</a> community site. Source code is available on <a
 				href="https://github.com/algolia/hn-search">GitHub</a>. The search backend is implemented using <a

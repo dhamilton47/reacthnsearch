@@ -12,9 +12,9 @@ html {
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%
 }
-
+*/
 body{margin:0}
-
+/*
 article,aside,details,figcaption,figure,footer,
 header,hgroup,main,menu,nav,section,summary {
     display:block
@@ -385,12 +385,6 @@ button,input[type="submit"]{-webkit-appearance:none;-moz-appearance:none;-ms-app
 .spacer10{height:10em}
 
 .hide{display:none !important}
-
-
-
-
-
-
 */
 
 @font-face {
@@ -482,65 +476,16 @@ button,input[type="submit"]{-webkit-appearance:none;-moz-appearance:none;-ms-app
     border-color:transparent transparent white transparent
 }
 
+.main {
+    padding-top: 50px !important
+}
+
 .scroll-to-top .tooltip {
     position:absolute;
     left:50%;
     top:-50px;
     display:none
 }
-
-
-.page {
-    color: #5C5C5C;
-    margin-top: 77px;
-    padding: 30px 50px;
-    font-size: 14px
-}
-
-.page pre {
-    background: #e1e1e1;
-    border: 1px solid #d7d7d7;
-    font-size: 13px;
-    border-radius: 5px;
-    padding: 20px
-}
-
-.page code {
-    color: #1c709b;
-    background-color: #edf7fc;
-    padding: 3px 8px;
-    border-radius: 3px
-}
-
-.page h3 {
-    font-size: 1.3em;
-    margin: 1em 0 0.3em;
-    color: #9d9d9d
-}
-
-.page ul li {
-    padding: 0 0 6px 0
-}
-
-.page .panel {
-    border-radius: 5px;
-    border: solid 1px #d0d0d0;
-    padding: 10px 20px;
-    margin-bottom: 20px
-}
-
-.page .panel h2 {
-    font-size: 1.6em;
-    font-weight: 600;
-    margin: 0.4em 0 0.6em
-}
-
-.page .panel h3 {
-    margin: 0.4em 0 0.6em
-}
-
-
-
 
 
 body {
@@ -619,119 +564,6 @@ body {
     border-bottom: solid 2px #FF742B
 }
 
-
-
-
-
-.main strong {
-    color: #5C5C5C
-}
-
-.main header {
-    border-bottom: solid 1px #eee;
-    line-height: 77px;
-    padding: 0 30px;
-    background-color: #fdfdfd;
-    white-space: nowrap
-}
-
-.main header h1 {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 25px;
-    position: relative;
-    top: 3px;
-    color: #5C5C5C
-}
-
-.main .search-infos {
-    position: absolute;
-    top :0;
-    right: 20px;
-    font-size: 13px;
-    z-index: 1
-}
-
-.main .search-infos .action-share {
-    margin-left: 10px
-}
-
-.main .search-infos .action-share a i {
-    font-size: 18px;
-    color: #9d9d9d
-}
-
-.main .search-infos .action-share a i:hover {
-    color: #FF742B
-}
-
-.main .wrap-dd-menu li a {
-    font-size: 13px
-}
-
-.main .date-range-filter ul {
-    display: inline-block
-}
-
-.main .date-range-filter ul li {
-    width: 100px;
-    display: inline-block
-}
-
-.main .date-range-filter label {
-    margin-left: 20px;
-    font-size: 12px;
-    font-weight: normal;
-    white-space: nowrap
-}
-
-.main .date-range-filter input.radio:empty {
-    margin-left: -9999px
-}
-
-.main .date-range-filter input.radio:empty ~ label {
-    float: left;
-    position: relative;
-    line-height: 23px;
-    text-indent: 30px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none
-}
-
-.main .date-range-filter input.radio:empty ~ label:before {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    display: block;
-    content: "";
-    border: solid 1px #ccc;
-    line-height: 20px;
-    border-radius: 50%
-}
-
-.main .date-range-filter input.radio:checked ~ label:before {
-    box-shadow: inset 0 0 0 6px white, inset 0 0 0 10px #FF742B
-}
-
-.main .date-range-filter input.radio:focus ~ label:before {
-    box-shadow: inset 0 0 0 6px white, inset 0 0 0 10px #FF742B
-}
-
-.main h2 {
-    display: inline-block;
-    margin-top: 1em;
-    font-size: 20px;
-    color: #5C5C5C
-}
-
-
-
-
-
-
 footer {
     padding: 30px 0;
     text-align: center
@@ -776,21 +608,6 @@ footer a {
     .item-input-wrapper {
         width: calc(100% - 40px) !important
     }
-    .main {
-        padding-top: 50px !important
-    }
-    .main header {
-        height: auto !important;
-        line-height: 45px;
-        padding: 0 10px !important;
-        text-align: right
-    }
-    .main header h1 {
-        font-size: 16px
-    }
-    .main header .filter-label {
-        display: none
-    }
     .sidebar {
         margin-top: -30px !important
     }
@@ -810,11 +627,6 @@ footer a {
     }
 }
 
-@media screen and (min-width: 768px) {
-    .sliding-menu-button {
-        display: none
-    }
-}
 
 @media screen and (max-width: 768px) {
     .state-title {
@@ -832,6 +644,4 @@ footer a {
     left: 0;
     z-index: 100000
 }
-
-
  */

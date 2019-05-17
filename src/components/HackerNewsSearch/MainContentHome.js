@@ -10,7 +10,7 @@ const widerDateRange = (e) => {};
 const searchAllItems =  (e) => {};
 const selectInput = (e) => {};
 //TODO: enforce consistent coding style
-export function SectionHome(props) {
+export function MainContentHome(props) {
 	return <section>
 		<Items results={results}/>
 
@@ -121,4 +121,4 @@ export function SectionHome(props) {
 	</section>;
 }
 
-SectionHome.propTypes = {query: PropTypes.bool};
+MainContentHome.propTypes = {query: PropTypes.bool};

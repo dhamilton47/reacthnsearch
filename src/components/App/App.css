@@ -12,9 +12,14 @@ html {
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%
 }
+*/
 
-body{margin:0}
+body {
+    line-height: 1.5;
+    margin: 0
+}
 
+/*
 article,aside,details,figcaption,figure,footer,
 header,hgroup,main,menu,nav,section,summary {
     display:block
@@ -201,9 +206,13 @@ h3{font-size:1.75em}
 h4{font-size:1.5em}
 h5{font-size:1.25em}
 h6{font-size:1em}
+*/
 
-p{margin:0 0 0.75em}
+p {
+    margin: 0 0 0.75em
+}
 
+/*
 a {
     -webkit-transition:color 0.1s linear;
     -moz-transition:color 0.1s linear;

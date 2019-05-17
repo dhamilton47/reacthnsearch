@@ -1,0 +1,183 @@
+.base {
+    background-color: #fdfdfd;
+    border: none;
+    box-sizing: border-box;
+    display: block;
+    font-family: Verdana, Geneva, sans-serif !important;
+    font-size: 12px;
+    line-height: 42px;
+    padding: 0 30px 0 10px;
+    white-space: nowrap;
+    z-index: 5;
+    -webkit-font-smoothing: antialiased;
+}
+.baseSearchInfos {
+    composes: base;
+    /*   position: absolute; */
+    display: inline-block;
+    top :0;
+    right: 20px;
+    font-size: 13px;
+    text-decoration: none;
+    z-index: 1
+}
+
+.baseSearchInfosActionShare {
+    composes: base;
+    display: inline-block;
+    margin-left: 10px
+}
+
+.baseWrapDDMenu {
+    composes: base;
+}
+
+
+
+.base h1 {
+    color: #5c5c5c;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0;
+    text-align: center;
+}
+
+.experimental {
+    font-size: 13px;
+    height: 77px;
+    margin-left: 0;
+    /* position: fixed; */
+    /* top: 100px; */
+    width: 100%;
+    z-index: 5;
+}
+
+.experimental h1 {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+    color: #5C5C5C
+}
+
+@media screen and (max-width: 480px) {
+    .base {
+        height: auto !important;
+        line-height: 45px;
+        margin-left: 0;
+        padding: 0 10px !important;
+        text-align: right;
+        width: 100%;
+    }
+    .experimental h1 {
+        font-size: 16px
+    }
+    .base .filter-label {
+        display: none
+    }
+    .base>span {
+        display: none
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .experimental {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .base {
+        left: 0;
+        padding: 0 10px !important;
+        width: 100%;
+    }
+    .experimental {
+        left: 0;
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+}
+.base strong {
+    color: #5C5C5C
+}
+
+
+.baseSearchInfos li {
+    display: inline-block;
+}
+
+.baseSearchInfosActionShare a i {
+    font-size: 18px;
+    color: #9d9d9d
+}
+
+.baseSearchInfosActionShare a i:hover {
+    color: #FF742B
+}
+
+.base .wrap-dd-menu li a {
+    font-size: 13px
+}
+
+.base .date-range-filter ul {
+    display: inline-block
+}
+
+.base .date-range-filter ul li {
+    width: 100px;
+    display: inline-block
+}
+
+.base .date-range-filter label {
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: normal;
+    white-space: nowrap
+}
+
+.base .date-range-filter input.radio:empty {
+    margin-left: -9999px
+}
+
+.base .date-range-filter input.radio:empty ~ label {
+    float: left;
+    position: relative;
+    line-height: 23px;
+    text-indent: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.base .date-range-filter input.radio:empty ~ label:before {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    content: "";
+    border: solid 1px #ccc;
+    line-height: 20px;
+    border-radius: 50%
+}
+
+.base .date-range-filter input.radio:checked ~ label:before {
+    box-shadow: inset 0 0 0 6px white, inset 0 0 0 10px #FF742B
+}
+
+.base .date-range-filter input.radio:focus ~ label:before {
+    box-shadow: inset 0 0 0 6px white, inset 0 0 0 10px #FF742B
+}
+
+.base h2 {
+    display: inline-block;
+    margin-top: 1em;
+    font-size: 20px;
+    color: #5C5C5C
+}
+

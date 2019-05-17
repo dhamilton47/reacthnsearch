@@ -1,11 +1,11 @@
 import React from 'react';
-import pageHeaderStyle from './PageHeader.module.css';
+import pageHeaderStyle from './css/PageHeader.module.css';
 import LogoHN from "./LogoHN";
 import { SearchWrapper } from "./SearchWrapper";
 // TODO: refactor null to a 'back' button
 export const PageHeader = props => {
 	return (
-		<header className={pageHeaderStyle.pageHeader}>
+		<div id="Page Header" className={pageHeaderStyle.base}>
 			<LogoHN/>
 
 			{
@@ -13,6 +13,6 @@ export const PageHeader = props => {
 					<SearchWrapper settings={props.settings}/>
 					: null
 			}
-		</header>
+		</div>
 	);
 };
