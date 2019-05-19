@@ -1,6 +1,6 @@
 import React from "react";
-import settingsStyle from './css/EditSettings.module.css';
-import FormGroupSelect from "./FormGroupSelect";
+import settingsStyle from '../css/EditSettings.module.css';
+import FormGroupSelect from "../FormGroupSelect";
 
 function FormGroupCheckbox(props) {
 	return <div className={settingsStyle.formGroup}>

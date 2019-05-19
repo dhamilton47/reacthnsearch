@@ -1,5 +1,5 @@
 import React from "react";
-import pageStyle from './css/MainContent.module.css';
+import pageStyle from '../css/MainContent.module.css';
 
 //TODO: enforce consistent coding style
 export function MainContentAbout() {

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { MainContentHome } from "./MainContentHome";
-import { MainContentAbout } from "./MainContentAbout";
-import { MainContentSettings } from "./MainContentSettings";
-import { MainContentHelp } from "./MainContentHelp";
-import { MainContentApi } from "./MainContentApi";
-import { MainContentCoolApps } from "./MainContentCoolApps";
+import { MainContentHome } from "./MainContent/MainContentHome";
+import { MainContentAbout } from "./MainContent/MainContentAbout";
+import { MainContentSettings } from "./MainContent/MainContentSettings";
+import { MainContentHelp } from "./MainContent/MainContentHelp";
+import { MainContentApi } from "./MainContent/MainContentApi";
+import { MainContentCoolApps } from "./MainContent/MainContentCoolApps";
 import mainContentStyle from './css/MainContent.module.css';
 
 

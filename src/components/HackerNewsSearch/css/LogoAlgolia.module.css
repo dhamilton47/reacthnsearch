@@ -1,39 +1,23 @@
 /* TODO: clean up */
 
 .base {
-/*    background-color: transparent; */
-    display: inline-block;
-    float: left;
-    font-size: 12px;
-    position: relative;
-/*    text-decoration: none; */
-    transition: all 0.5s ease;
     width: 80px;
+    font-size: 12px;
+    display: inline-block;
+    position: relative
 }
-/*
-.logoHN div {
-    color: white;
-    font-size: 18px;
-    line-height: 1em;
-    padding-top: 6px;
-}
-/*
-.logoHN a,
-.logoHN a:visited {
-    color: white;
 
-}
-*/
-.logoHN img {
-    float: left;
-    height: 48px;
-    margin-right: 10px;
-    padding-top: 2px;
-    width: 48px;
-}
 
 @media screen and (max-width: 480px) {
     .base {
         display: none;
     }
+}
+
+.base img {
+    width: 60px;
+    position: relative;
+    top: -2px;
+    left: 4px;
+    vertical-align: bottom;
 }

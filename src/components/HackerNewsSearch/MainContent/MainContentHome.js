@@ -1,9 +1,9 @@
-import {Items} from "./Items";
+import {Items} from "../Items";
 //TODO: Bring in as props
-import {results, settings, state} from "./DataForSettings";
+import {results, settings, state} from "../DataForSettings";
 import * as PropTypes from "prop-types";
 import React from "react";
-import PaginationContainer from "./PaginationContainer";
+import PaginationContainer from "../PaginationContainer";
 
 //TODO: write functions
 const widerDateRange = (e) => {};

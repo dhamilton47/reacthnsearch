@@ -498,21 +498,6 @@ body {
     background-color: white
 }
 
-.nav-link-settings {
-    font-size: 14px
-}
-
-.nav-link-settings a:link,
-.nav-link-settings a:visited{
-    color: #9d9d9d
-}
-
-.nav-link-settings a:link i,
-.nav-link-settings a:visited i {
-    font-size: 20px;
-    position: relative;
-    top: 3px
-}
 
 
 .logo {

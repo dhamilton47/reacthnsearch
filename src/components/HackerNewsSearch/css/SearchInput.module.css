@@ -3,7 +3,7 @@
 .base {
     display: inline-block;
     margin-right: 5px;
-    width: calc(100% - 40px) !important;
+    width: calc(100% - 100px) !important;
 }
 
 .base i {
@@ -20,5 +20,20 @@ base i::before {
 }
 
 .base input {
-
+    border: none;
+    border-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    color: #5c5c5c;
+    display: inline-block;
+    font: inherit;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 1em;
+    height: 42px;
+    line-height: 25px;
+    padding: 0 15px 0 50px;
+    transition: border-color;
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
 }
