@@ -1656,17 +1656,20 @@ ul.list-item-comments .reply-container a {
     border-color: #FF742B;
     color: #FF742B
 }
-
+*/
 footer {
-    padding: 30px 0;
-    text-align: center
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    padding: 10px 0 30px 0;
+    text-align: center;
 }
 
 footer a {
     color: #9d9d9d;
-    font-size: 14px
+    font-size: 14px;
 }
-
+/*
 .sliding-menu-button {
     background-color: white;
     background-clip: padding-box;

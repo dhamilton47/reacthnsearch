@@ -6,8 +6,8 @@ import mainFooterStyle from './css/MainFooter.module.css';
 
 export const MainFooter = props => {
 	return (
-		<div id="Main - Footer" className={mainFooterStyle.base}>
-			<ul>
+		<footer id="Main - Footer">
+			<ul className={mainFooterStyle.base}>
 				<ListLink location={props.routes.about}/>
 				<ListSeparator/>
 				<ListLink location={props.routes.settings}/>
@@ -24,6 +24,6 @@ export const MainFooter = props => {
 				<ListSeparator/>
 				<ListLink location={props.routes.coolApps}/>
 			</ul>
-		</div>
+		</footer>
 	);
 };

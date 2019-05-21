@@ -30,24 +30,24 @@ export const MainHeader = props => {
 						<SlidingMenu settings={props.settings}/>
 						{
 							state
-								? <span className="state-title">
+								? <span className={mainHeaderStyle.stateTitle}>
 						{/* eslint-disable-next-line */}
 									<h1>{state}</h1>
-									<span className="filter-label">in</span>
+									<span className={mainHeaderStyle.filterLabel}>in</span>
 								</span>
-								: <span className="filter-label">Search</span>
+								: <span className={mainHeaderStyle.filterLabel}>Search</span>
 						}
 						<Dropdown selected={"Stories"} list={props.settings.lists.searchWhat}/>
 
-						<span className="filter-label">by</span>
+						<span className={mainHeaderStyle.filterLabel}>by</span>
 						<Dropdown selected={"Popularity"} list={props.settings.lists.searchBy}/>
 
-						<span className="filter-label">for</span>
+						<span className={mainHeaderStyle.filterLabel}>for</span>
 						<Dropdown selected={"All time"} list={props.settings.lists.searchTimePeriod}/>
 
-						<ul className={mainHeaderStyle.baseSearchInfos}>
+						<ul className={mainHeaderStyle.searchInfos}>
 							<li># result(s) (0.00N seconds)</li>
-							<li className={mainHeaderStyle.baseSearchInfosActionShare}>
+							<li className={mainHeaderStyle.actionShare}>
 								{/* eslint-disable-next-line */}
 								<a className="placeholder"/>
 								<div className={wrapDropDownMenuStyle.base}>

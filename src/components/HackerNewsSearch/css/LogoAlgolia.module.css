@@ -7,17 +7,16 @@
     position: relative
 }
 
-
-@media screen and (max-width: 480px) {
-    .base {
-        display: none;
-    }
-}
-
 .base img {
     width: 60px;
     position: relative;
     top: -2px;
     left: 4px;
     vertical-align: bottom;
+}
+
+@media screen and (max-width: 480px) {
+    .base {
+        display: none;
+    }
 }

@@ -613,11 +613,7 @@ footer a {
 }
 
 
-@media screen and (max-width: 768px) {
-    .state-title {
-        visibility: hidden
-    }
-}
+
 
 .flash-alert {
     font-size: 0.8em;
