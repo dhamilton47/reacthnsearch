@@ -2,7 +2,7 @@ import React from 'react';
 import pageHeaderStyle from './css/PageHeader.module.css';
 import LogoHN from "./LogoHN";
 //import { SearchWrapper } from "./SearchWrapper";
-import searchWrapperStyle from "./css/SearchWrapper.module.css";
+import searchWrapperStyle from "./css/PageHeader.module.css";
 import SearchInput from "./SearchInput";
 import LogoAlgolia from "./LogoAlgolia";
 //import SettingsToggle from "./SettingsToggle";
@@ -17,13 +17,13 @@ export const PageHeader = props => {
 		searchWrapper = (
 			<React.Fragment>
 				{/*<SearchWrapper settings={props.settings}/>*/}
-				<div className={searchWrapperStyle.base}>
-					<SearchInput settings={props.settings}/>
-					<LogoAlgolia/>
-				</div>
 
+					<SearchInput settings={props.settings}/>
+
+
+				<LogoAlgolia/>
 				{/*<SettingsToggle/>*/}
-				<div className={pageHeaderStyle.settingsNavLink}>
+				<div className={pageHeaderStyle.settingsNavLinkDefault}>
 					<Link to="/settings/">
 						<i className="icon-params"/>
 					</Link>
@@ -35,7 +35,7 @@ export const PageHeader = props => {
 	}
 
 	return (
-		<div id="Page Header" className={pageHeaderStyle.base}>
+		<div id="Page Header" className={pageHeaderStyle.pageHeaderDefault}>
 			<LogoHN/>
 			{searchWrapper}
 			{backButton}

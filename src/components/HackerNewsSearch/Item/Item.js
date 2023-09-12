@@ -9,7 +9,9 @@ import { ItemStarred } from "./ItemStarred";
 import { ShowStoryText } from "../ShowStoryText";
 import { ShowCommentText } from "../ShowCommentText";
 import { makePlural } from "../Utils";
-import itemStyles from './Item.module.css'
+import itemStyles from './Item.module.css';
+import itemMainStyles from '../css/ItemMain.module.css';
+import itemActionsStyles from '../css/ItemActions.module.css';
 
 import {settings, state} from '../DataForSettings';
 //TODO: pass these in as props
@@ -32,19 +34,19 @@ class Item extends Component {
 	render() {
 
 		return (
-			<div className={itemStyles.item}
+			<div className={itemStyles.itemDefault}
 			     onClick={this.clickHit(this.props.story.objectID)}
 			>
-				<div className="item-main">
-					<div className="item-content-wrapper">
+				<div className={itemMainStyles.itemMainDefault}>
+					<div className={itemMainStyles.itemContentWrapperDefault}>
 						{
 							settings.showThumbnails && settings.style !== "default" && this.props.story._tags[0] === "story" && state !== "ask-hn" && state !== "polls"
 								? null : null
 						}
-						<div className="item-title-and-infos">
+						<div className={itemMainStyles.itemTitleAndInfosDefault}>
 							<ItemTitle settings={settings} story={this.props.story}/>
 
-							<ul className="item-infos list-inline">
+							<ul className={itemMainStyles.itemInfosDefault + "list-inline"}>
 								{
 									this.props.story.points
 										? <ItemLikesCount settings={settings} story={this.props.story}/>
@@ -63,7 +65,7 @@ class Item extends Component {
 
 								{
 									this.props.story.url
-										? <ItemSourceLink story={this.props.story}/>
+										? <ItemSourceLink settings={settings} story={this.props.story}/>
 										: null
 								}
 
@@ -84,7 +86,7 @@ class Item extends Component {
 					</div>
 					{
 						this.props.story._tags[0] === "story" || this.props.story._tags[0] === "poll" || this.props.story._tags[0] === "job"
-							?<div className="item-actions">
+							?<div className={itemActionsStyles.itemActionsDefault}>
 								<ul className="list-inline">
 									{
 										state !== "jobs"
@@ -98,7 +100,7 @@ class Item extends Component {
 												{
 													this.props.story.num_comments > 0
 														? <a
-															className="comments-bubble"
+															className={itemActionsStyles.commentsBubbleDefault}
 															onClick={ this.loadComments(this.props.story.objectID) }
 															href={this.props.story.url}
 														>
@@ -109,7 +111,7 @@ class Item extends Component {
 
 												{
 													this.props.story.num_comments === 0
-														? <span className="comments-bubble no-comments" style={{ display: "none" }}/>
+														? <span className={itemActionsStyles.commentsBubbleDefault + "no-comments"} style={{ display: "none" }}/>
 														:null
 												}
 											</li>

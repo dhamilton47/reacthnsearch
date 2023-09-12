@@ -1,4 +1,4 @@
-.base {
+.mainHeaderDefault {
     background-color: #fdfdfd;
     border: none;
     box-sizing: border-box;
@@ -12,7 +12,7 @@
     -webkit-font-smoothing: antialiased;
 }
 .searchInfos {
-    composes: base;
+    composes: mainHeaderDefault;
     /*   position: absolute; */
     display: inline-block;
     float: right;
@@ -23,18 +23,16 @@
 }
 
 .actionShare {
-    composes: base;
+    composes: mainHeaderDefault;
     display: inline-block;
     margin-left: 10px
 }
 
 .baseWrapDDMenu {
-    composes: base;
+    composes: mainHeaderDefault;
 }
 
-
-
-.base h1 {
+.mainHeaderDefault h1 {
     color: #5c5c5c;
     display: inline-block;
     font-size: 18px;
@@ -43,7 +41,7 @@
     text-align: center;
 }
 
-.experimental {
+.mainHeaderExperimental {
     font-size: 13px;
     height: 77px;
     margin-left: 0;
@@ -53,7 +51,7 @@
     z-index: 5;
 }
 
-.experimental h1 {
+.mainHeaderExperimental h1 {
     display: inline-block;
     margin-right: 10px;
     font-size: 25px;
@@ -62,47 +60,8 @@
     color: #5C5C5C
 }
 
-@media screen and (max-width: 480px) {
-    .base {
-        height: auto !important;
-        line-height: 45px;
-        margin-left: 0;
-        padding: 0 10px !important;
-        text-align: right;
-        width: 100%;
-    }
-    .experimental h1 {
-        font-size: 16px
-    }
-    .filterLabel {
-        display: none
-    }
-    .base>span {
-        display: none
-    }
-}
 
-@media screen and (max-width: 768px) {
-    .experimental {
-        margin-left: 0;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .base {
-        left: 0;
-        padding: 0 10px !important;
-        width: 100%;
-    }
-    .experimental {
-        left: 0;
-        margin-left: 200px;
-        width: calc(100% - 200px);
-    }
-}
-
-.base strong {
+.mainHeaderDefault strong {
     color: #5C5C5C
 }
 
@@ -119,31 +78,31 @@
     color: #FF742B
 }
 
-.base .wrap-dd-menu li a {
+.mainHeaderDefault .wrap-dd-menu li a {
     font-size: 13px
 }
 
-.base .date-range-filter ul {
+.mainHeaderDefault .date-range-filter ul {
     display: inline-block
 }
 
-.base .date-range-filter ul li {
+.mainHeaderDefault .date-range-filter ul li {
     width: 100px;
     display: inline-block
 }
 
-.base .date-range-filter label {
+.mainHeaderDefault .date-range-filter label {
     margin-left: 20px;
     font-size: 12px;
     font-weight: normal;
     white-space: nowrap
 }
 
-.base .date-range-filter input.radio:empty {
+.mainHeaderDefault .date-range-filter input.radio:empty {
     margin-left: -9999px
 }
 
-.base .date-range-filter input.radio:empty ~ label {
+.mainHeaderDefault .date-range-filter input.radio:empty ~ label {
     float: left;
     position: relative;
     line-height: 23px;
@@ -155,7 +114,7 @@
     user-select: none
 }
 
-.base .date-range-filter input.radio:empty ~ label:before {
+.mainHeaderDefault .date-range-filter input.radio:empty ~ label:before {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -166,23 +125,148 @@
     border-radius: 50%
 }
 
-.base .date-range-filter input.radio:checked ~ label:before {
+.mainHeaderDefault .date-range-filter input.radio:checked ~ label:before {
     box-shadow: inset 0 0 0 6px white, inset 0 0 0 10px #FF742B
 }
 
-.base .date-range-filter input.radio:focus ~ label:before {
+.mainHeaderDefault .date-range-filter input.radio:focus ~ label:before {
     box-shadow: inset 0 0 0 6px white, inset 0 0 0 10px #FF742B
 }
 
-.base h2 {
+.mainHeaderDefault h2 {
     display: inline-block;
     margin-top: 1em;
     font-size: 20px;
     color: #5C5C5C
 }
 
+@media screen and (min-width: 1200px) {
+    .mainHeaderExperimental {
+        left: 10%;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mainHeaderDefault {
+        left: 0;
+        padding: 0 10px !important;
+        width: 100%;
+    }
+    .mainHeaderExperimental {
+        left: 0;
+        margin-left: 200px;
+        padding: 0 10px !important;
+        width: 100%;
+        width: calc(100% - 200px);
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .mainHeaderDefault {
+        padding: 0 10px 0 60px !important;
+    }
+    .mainHeaderExperimental {
+        margin-left: 0;
+        width: 100%;
+    }
+    .searchInfos {
+        display: none !important;
+    }
     .stateTitle {
         visibility: hidden
     }
 }
+
+@media screen and (max-width: 480px) {
+    .mainHeaderDefault {
+        height: auto !important;
+        line-height: 45px;
+        margin-left: 0;
+        padding: 0 10px !important;
+        text-align: right;
+        width: 100%;
+    }
+    .mainHeaderDefault h1 {
+        font-size: 16px;
+    }
+    .mainHeaderExperimental h1 {
+        font-size: 16px
+    }
+    .filterLabel {
+        display: none
+    }
+    .mainHeaderDefault>span {
+        display: none
+    }
+    .mainHeaderExperimental>span{
+        display: none;
+    }
+}
+/* --------------------------------------- */
+@media screen and (max-width: 768px) {
+    .item-thumbnail {
+        display: none;
+    }
+    .navigation {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #datepicker {
+        top: 45px !important;
+    }
+    .item-actions {
+        display: none;
+    }
+    .item-main {
+        padding:0 !important;
+    }
+    .item-content-wrapper {
+        padding: 10px 20px !important;
+    }
+    .item-input-wrapper {
+        width: calc(100% - 40px) !important;
+    }
+    .main {
+        padding-top: 50px !important;
+    }
+    .sidebar {
+        margin-top: -30px !important;
+    }
+    .wrap-dd-select {
+        font-size: 12px;
+        margin-right: 0;
+        max-width: 80px;
+    }
+    .wrap-dd-select .selected {
+        display: inline-block;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+        white-space: nowrap;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sliding-menu-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .daterangepicker {
+        float: none;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #datepicker-form {
+        display: none;
+    }
+}
+

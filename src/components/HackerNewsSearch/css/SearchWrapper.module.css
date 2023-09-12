@@ -1,4 +1,4 @@
-.base {
+.searchWrapperDefault {
     float: left;
     margin-top: 3px;
     position: relative;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .base {
+    .searchWrapperDefault {
         width: calc(90% - 60px);
     }
 }

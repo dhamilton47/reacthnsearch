@@ -1,60 +1,76 @@
-.base {
+.pageHeaderBase {
+    display: grid;
+    grid-template-columns: 230px 1fr 80px 35px;
+    width: 100%;
+}
+
+.pageHeaderDefault {
     background-color: #FF742B;
     border: none;
     box-sizing: border-box;
     color: black;
-    display: block;
+    composes:pageHeaderBase;
+    /* display: block; */
     float: inherit;
     font-family: Verdana, Geneva, sans-serif !important;
     font-size: 1em;
+    grid-area: pageheader;
     height: 60px;
     line-height: 1.5;
     padding: 5px;
-    -webkit-font-smoothing: antialiased;
     z-index: 15;
+    -webkit-font-smoothing: antialiased;
 }
 
-@media screen and (max-width: 1200px) {
-    .base {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .base {
-        margin: 0 auto;
-        width: 1200px;
-    }
-}
-
-.main header {
-    border-bottom: solid 1px #eee;
-    line-height: 77px;
-    padding: 0 30px;
-    background-color: #fdfdfd;
-    white-space: nowrap
-}
-
-.main header h1 {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 25px;
+.searchWrapperDefault {
+    composes: pageHeaderBase;
+    float: left;
+    margin-top: 3px;
     position: relative;
-    top: 3px;
-    color: #5C5C5C
+    width: calc(90% - 230px);
 }
 
-.settingsNavLink {
+.settingsNavLinkDefault {
     float: right;
     font-size: 16px;
     margin: 10px 15px 0 0;
 }
 
-.settingsNavLink a:link i,
-.settingsNavLink a:visited i {
+.settingsNavLinkDefault a:link i,
+.settingsNavLinkDefault a:visited i {
     color: white;
     font-size: 20px;
     position: relative;
     top: 3px;
 }
 
+@media screen and (min-width: 1200px) {
+    .pageHeaderBase {
+        width: 80%;
+    }
+    /*
+    .pageHeaderDefault {
+        width: 80%;
+    }
+    .pageHeaderExperimental {
+        width: 80%;
+    }
+    */
+}
+
+@media screen and (max-width: 1200px) {
+    .pageHeaderBase {
+        width: 100%;
+    }
+    /*
+    .pageHeaderDefault, .pageHeaderExperimental {
+        width:100%;
+    }
+     */
+}
+
+@media screen and (max-width: 768px) {
+    .searchWrapperDefault {
+        width: calc(90% - 60px);
+    }
+}

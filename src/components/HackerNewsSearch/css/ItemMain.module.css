@@ -1,45 +1,46 @@
-.item-main {
+.itemMainDefault {
     display: table
 }
 
-.item-main h2 {
+.itemMainDefault h2 {
     float: left;
     margin-top: 0;
     font-size: 16px;
     font-weight: normal
 }
 
-.item-main h2 a {
+.itemMainDefault h2 a {
     color: #5C5C5C
 }
 
-.item-main h2 a[href]:visited {
+.itemMainDefault h2 a[href]:visited {
     color: #9c9c9c
 }
 
-.item-main h2 a[href]:hover {
+.itemMainDefault-main h2 a[href]:hover {
     color: #1c1c1c
 }
 
-.item-main h2 em {
+.itemMainDefault h2 em {
     font-style: normal;
     font-weight: bold
 }
 
-.item-main .item-comments {
+.itemMainDefault .item-comments {
     font-size: 12px
 }
 
-.item-main .starred i {
+.itemMainDefault .starred i {
     color: #FF742B
 }
 
-.item-main [class^="icon-"],
-.item-main [class*=" icon-"] {
+.itemMainDefault [class^="icon-"],
+.itemMainDefault-main [class*=" icon-"] {
     color:#9d9d9d
 }
 
-.date,.comments {
+.date,
+.comments {
     font-size: 12px;
     color: #9d9d9d
 }
@@ -53,8 +54,8 @@ a.date:hover {
 }
 
 .no-results {
-    width: 500px
-;margin: 0 auto;
+    width: 500px;
+    margin: 0 auto;
     padding: 50px
 }
 
@@ -67,7 +68,7 @@ a.date:hover {
     line-height: 2
 }
 
-.item-content-wrapper {
+.itemContentWrapperDefault {
     width: 100%;
     display: table-cell;
     vertical-align: middle
@@ -88,16 +89,10 @@ a[href].item-thumbnail-link:hover .item-thumbnail {
     border-color: #b6b6b6
 }
 
-.item-title-and-infos {
+.itemTitleAndInfosDefault {
     float: left;
     padding-top: 5px;
     width: calc(100% - 70px)
-}
-
-@media screen and (max-width: 768px) {
-    .item-title-and-infos {
-        width:100%
-    }
 }
 
 .text-container {
@@ -118,23 +113,23 @@ a[href].item-thumbnail-link:hover .item-thumbnail {
     color: #5C5C5C
 }
 
-.item-infos {
+.itemInfosDefault {
     float: left;
     clear: both
 }
 
-.item-infos li {
+.itemInfosDefault li {
     margin-right: 8px
 }
 
-.item-infos i {
+.itemInfosDefault i {
     position: relative;
     top: 1px;
     color: #d0d0d0 !important;
     font-size: 13px
 }
 
-.item-infos a:hover {
+.itemInfosDefault a:hover {
     border-bottom: dotted 1px #ccc
 }
 
@@ -196,3 +191,43 @@ ul.list-item-comments .reply-container p {
 ul.list-item-comments .reply-container a {
     color: #517B91
 }
+
+@media screen and (min-width: 1200px) {
+    .itemMainExperimental {
+        left: 10%;
+        right: 10%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .itemMainExperimental {
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .itemTitleAndInfosDefault {
+        width:100%
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .itemMainDefault {
+        padding:0 !important;
+    }
+    .itemContentWrapperDefault {
+        padding: 10px 20px !important;
+    }
+}
+
+/* Experimental */
+
+.main .search-results .item-clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+

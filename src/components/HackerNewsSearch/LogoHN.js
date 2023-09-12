@@ -6,7 +6,7 @@ import logoHNStyle from './css/LogoHN.module.css';
 class LogoHN extends Component {
 	render() {
 		return (
-			<Link className={logoHNStyle.logoHN} to="/">
+			<Link className={logoHNStyle.logoHNDefault} to="/">
 				<img
 					src="https://hn.algolia.com/assets/logo-hn-search.png"
 					alt="Hacker News"

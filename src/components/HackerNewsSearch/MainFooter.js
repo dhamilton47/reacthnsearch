@@ -1,6 +1,7 @@
 import React from "react";
 import { ExternalLink } from "./ExternalLink";
-import { ListLink } from "./ListLink";import { ListSeparator } from "./ListSeparator";
+import { ListLink } from "./ListLink";
+import { ListSeparator } from "./ListSeparator";
 import mainFooterStyle from './css/MainFooter.module.css';
 
 

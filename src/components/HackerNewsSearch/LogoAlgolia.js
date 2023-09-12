@@ -5,7 +5,7 @@ import logoAlgoliaStyle from './css/LogoAlgolia.module.css';
 class LogoAlgolia extends Component {
 	render() {
 		return (
-			<span className={logoAlgoliaStyle.base}>
+			<span className={logoAlgoliaStyle.logoAlgoliaDefault}>
 				by
 			<a
 				href={"https://www.algolia.com/?utm_source=hn_search&utm_medium=link&utm_term=logo&utm_campaign=hn_algolia"}

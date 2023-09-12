@@ -13,7 +13,7 @@ class SearchInput extends Component {
 	render() {
 
 		return (
-			<div className={searchInputStyle.base}>
+			<div className={searchInputStyle.searchInputDefault}>
 				<i className="icon-search"/>
 				<input
 					type="search"

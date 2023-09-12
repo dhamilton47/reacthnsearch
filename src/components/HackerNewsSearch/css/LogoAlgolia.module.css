@@ -1,13 +1,13 @@
 /* TODO: clean up */
 
-.base {
+.logoAlgoliaDefault {
     width: 80px;
     font-size: 12px;
     display: inline-block;
     position: relative
 }
 
-.base img {
+.logoAlgoliaDefault img {
     width: 60px;
     position: relative;
     top: -2px;
@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .base {
+    .logoAlgoliaDefault {
         display: none;
     }
 }

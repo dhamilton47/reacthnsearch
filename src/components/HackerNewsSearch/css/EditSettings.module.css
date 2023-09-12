@@ -31,12 +31,6 @@
     width: 48.821174201%;
 }
 
-@media screen and (max-width: 480px) {
-    .base {
-        padding: 0 10px;
-    }
-}
-
 .base h2 {
     color: #5C5C5C;
     display: inline-block;
@@ -55,12 +49,6 @@ fieldset {
     border-top: solid 1px #cccccc;
     margin: 0 0 0.75em 0;
     padding: 1.5em;
-}
-
-@media screen and (max-width: 480px) {
-    .formGroup {
-        font-size:13px;
-    }
 }
 
 .formGroup:after {
@@ -85,4 +73,13 @@ fieldset {
 
 .formControl:last-child {
     margin-right: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .base {
+        padding: 0 10px;
+    }
+    .formGroup {
+        font-size:13px;
+    }
 }

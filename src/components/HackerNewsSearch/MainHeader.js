@@ -18,7 +18,7 @@ import Dropdown from "./Dropdown";
 export const MainHeader = props => {
 
 	return (
-		<div id="Main - Header" className={mainHeaderStyle.base}>
+		<div id="Main - Header" className={mainHeaderStyle.mainHeaderDefault}>
 			{ props.page === 'about' ? <h1>About</h1> : null }
 			{ props.page === 'settings' ? <h1>Settings</h1> : null }
 			{ props.page === 'help' ? <h1>Help</h1> : null }

@@ -1,4 +1,4 @@
-.item {
+.itemDefault {
     border-bottom: solid 1px #eee;
     box-sizing: border-box;
     overflow: hidden;
@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-.item h2 {
+.itemDefault h2 {
     font-size: 14px;
     font-weight: normal;
     line-height: 1.25;
@@ -16,7 +16,7 @@
     -webkit-font-smoothing: antialiased;
 }
 
-.item ul {
+.itemDefault ul {
     clear: both;
 /*    display: inline-block; */
     float: none;
@@ -24,7 +24,7 @@
     white-space: nowrap;
 }
 
-.item ul li {
+.itemDefault ul li {
     border-left: 1px solid #cfcfcf;
     display: inline-block;
     margin-right: 7px;
@@ -32,12 +32,12 @@
 }
 
 
-.item ul li:first-child {
+.itemDefault ul li:first-child {
     border: none;
     padding-left: 0;
 }
 
-.item ul li a {
+.itemDefault ul li a {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(105, 105, 105);
     font-size: 10px;
